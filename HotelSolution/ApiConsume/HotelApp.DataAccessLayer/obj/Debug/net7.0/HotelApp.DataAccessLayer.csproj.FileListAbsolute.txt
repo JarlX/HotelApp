@@ -1,0 +1,17 @@
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DataAccessLayer/bin/Debug/net7.0/HotelApp.DataAccessLayer.deps.json
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DataAccessLayer/bin/Debug/net7.0/HotelApp.DataAccessLayer.runtimeconfig.json
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DataAccessLayer/bin/Debug/net7.0/HotelApp.DataAccessLayer.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DataAccessLayer/bin/Debug/net7.0/HotelApp.DataAccessLayer.pdb
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DataAccessLayer/bin/Debug/net7.0/HotelApp.EntityLayer.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DataAccessLayer/bin/Debug/net7.0/HotelApp.EntityLayer.pdb
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/HotelApp.DataAccessLayer.csproj.AssemblyReference.cache
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/HotelApp.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/HotelApp.DataAccessLayer.AssemblyInfoInputs.cache
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/HotelApp.DataAccessLayer.AssemblyInfo.cs
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/HotelApp.DataAccessLayer.csproj.CoreCompileInputs.cache
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/HotelApp.DataAccessLayer.csproj.CopyComplete
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/HotelApp.DataAccessLayer.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/refint/HotelApp.DataAccessLayer.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/HotelApp.DataAccessLayer.pdb
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/HotelApp.DataAccessLayer.genruntimeconfig.cache
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/ref/HotelApp.DataAccessLayer.dll

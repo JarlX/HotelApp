@@ -1,0 +1,14 @@
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.EntityLayer/bin/Debug/net7.0/HotelApp.EntityLayer.deps.json
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.EntityLayer/bin/Debug/net7.0/HotelApp.EntityLayer.runtimeconfig.json
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.EntityLayer/bin/Debug/net7.0/HotelApp.EntityLayer.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.EntityLayer/bin/Debug/net7.0/HotelApp.EntityLayer.pdb
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.EntityLayer/obj/Debug/net7.0/HotelApp.EntityLayer.csproj.AssemblyReference.cache
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.EntityLayer/obj/Debug/net7.0/HotelApp.EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.EntityLayer/obj/Debug/net7.0/HotelApp.EntityLayer.AssemblyInfoInputs.cache
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.EntityLayer/obj/Debug/net7.0/HotelApp.EntityLayer.AssemblyInfo.cs
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.EntityLayer/obj/Debug/net7.0/HotelApp.EntityLayer.csproj.CoreCompileInputs.cache
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.EntityLayer/obj/Debug/net7.0/HotelApp.EntityLayer.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.EntityLayer/obj/Debug/net7.0/refint/HotelApp.EntityLayer.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.EntityLayer/obj/Debug/net7.0/HotelApp.EntityLayer.pdb
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.EntityLayer/obj/Debug/net7.0/HotelApp.EntityLayer.genruntimeconfig.cache
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.EntityLayer/obj/Debug/net7.0/ref/HotelApp.EntityLayer.dll
