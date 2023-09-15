@@ -1,0 +1,17 @@
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DTOLayer/bin/Debug/net7.0/HotelApp.DTOLayer.deps.json
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DTOLayer/bin/Debug/net7.0/HotelApp.DTOLayer.runtimeconfig.json
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DTOLayer/bin/Debug/net7.0/HotelApp.DTOLayer.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DTOLayer/bin/Debug/net7.0/HotelApp.DTOLayer.pdb
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DTOLayer/bin/Debug/net7.0/HotelApp.EntityLayer.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DTOLayer/bin/Debug/net7.0/HotelApp.EntityLayer.pdb
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DTOLayer/obj/Debug/net7.0/HotelApp.DTOLayer.csproj.AssemblyReference.cache
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DTOLayer/obj/Debug/net7.0/HotelApp.DTOLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DTOLayer/obj/Debug/net7.0/HotelApp.DTOLayer.AssemblyInfoInputs.cache
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DTOLayer/obj/Debug/net7.0/HotelApp.DTOLayer.AssemblyInfo.cs
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DTOLayer/obj/Debug/net7.0/HotelApp.DTOLayer.csproj.CoreCompileInputs.cache
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DTOLayer/obj/Debug/net7.0/HotelApp.DTOLayer.csproj.CopyComplete
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DTOLayer/obj/Debug/net7.0/HotelApp.DTOLayer.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DTOLayer/obj/Debug/net7.0/refint/HotelApp.DTOLayer.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DTOLayer/obj/Debug/net7.0/HotelApp.DTOLayer.pdb
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DTOLayer/obj/Debug/net7.0/HotelApp.DTOLayer.genruntimeconfig.cache
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.DTOLayer/obj/Debug/net7.0/ref/HotelApp.DTOLayer.dll
