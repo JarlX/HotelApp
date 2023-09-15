@@ -33,7 +33,7 @@ public class RoomManager : IRoomService
         return _roomDal.GetList();
     }
 
-    public Room GetById(int id)
+    public Room TGetById(int id)
     {
         return _roomDal.GetByID(id);
     }

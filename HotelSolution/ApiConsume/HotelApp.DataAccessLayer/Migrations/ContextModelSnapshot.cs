@@ -121,6 +121,10 @@ namespace HotelApp.DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("StaffTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("StaffID");
 
                     b.ToTable("Staffs");

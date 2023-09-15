@@ -10,5 +10,5 @@ public interface IGenericService<T> where T: class
 
     List<T> TGetList();
 
-    T GetById(int id);
+    T TGetById(int id);
 }

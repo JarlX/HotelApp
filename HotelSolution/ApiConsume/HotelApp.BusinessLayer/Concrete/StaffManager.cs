@@ -32,8 +32,8 @@ public class StaffManager : IStaffService
     {
         return _staffDal.GetList();
     }
-
-    public Staff GetById(int id)
+    
+    public Staff TGetById(int id)
     {
         return _staffDal.GetByID(id);
     }

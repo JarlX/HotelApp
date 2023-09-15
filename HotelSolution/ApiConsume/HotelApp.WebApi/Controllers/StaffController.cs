@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace HotelApp.WebApi.Controllers
 {
     using BusinessLayer.Abstract;
+    using EntityLayer.Concrete;
 
     [Route("api/[action]")]
     [ApiController]
@@ -30,24 +31,29 @@ namespace HotelApp.WebApi.Controllers
         [HttpGet("{id:int}")]
         public IActionResult GetStaff(int id)
         {
-            return Ok();
+            var staff = _staffService.TGetById(id);
+            return Ok(staff);
         }
 
         [HttpPost]
-        public IActionResult AddStaff()
+        public IActionResult AddStaff(Staff staff)
         {
+            _staffService.TInsert(staff);
             return Ok();
         }
 
         [HttpPut]
-        public IActionResult UpdateStaff()
+        public IActionResult UpdateStaff(Staff staff)
         {
+            _staffService.TUpdate(staff);
             return Ok();
         }
 
         [HttpDelete]
-        public IActionResult DeleteStaff()
+        public IActionResult DeleteStaff(int id)
         {
+            var staff = _staffService.TGetById(id);
+            _staffService.TDelete(staff);
             return Ok();
         }
     }

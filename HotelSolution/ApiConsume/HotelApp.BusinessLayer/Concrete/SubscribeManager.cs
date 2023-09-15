@@ -33,7 +33,7 @@ public class SubscribeManager : ISubscribeService
         return _subscribeDal.GetList();
     }
 
-    public Subscribe GetById(int id)
+    public Subscribe TGetById(int id)
     {
         return _subscribeDal.GetByID(id);
     }

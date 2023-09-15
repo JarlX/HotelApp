@@ -33,7 +33,7 @@ public class ServiceManager : IServiceService
         return _serviceDal.GetList();
     }
 
-    public Service GetById(int id)
+    public Service TGetById(int id)
     {
         return _serviceDal.GetByID(id);
     }
