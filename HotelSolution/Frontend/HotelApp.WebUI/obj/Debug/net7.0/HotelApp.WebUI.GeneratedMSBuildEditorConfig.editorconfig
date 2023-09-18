@@ -15,3 +15,39 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = /Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI
 build_property._RazorSourceGeneratorDebug = 
+
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/AdminLayout/FooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5MYXlvdXQvRm9vdGVyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/AdminLayout/HeaderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5MYXlvdXQvSGVhZGVyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/AdminLayout/HeadPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5MYXlvdXQvSGVhZFBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/AdminLayout/NavheaderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5MYXlvdXQvTmF2aGVhZGVyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/AdminLayout/PreloaderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5MYXlvdXQvUHJlbG9hZGVyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/AdminLayout/ScriptPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5MYXlvdXQvU2NyaXB0UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/AdminLayout/SidebarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5MYXlvdXQvU2lkZWJhclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/AdminLayout/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5MYXlvdXQvX0FkbWluTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/Staff/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhZmYvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
