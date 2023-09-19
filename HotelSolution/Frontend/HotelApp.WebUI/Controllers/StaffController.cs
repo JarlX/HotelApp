@@ -12,5 +12,10 @@ namespace HotelApp.WebUI.Controllers
         {
             return View();
         }
+
+        public IActionResult Staff()
+        {
+            
+        }
     }
 }
