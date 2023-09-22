@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
     "use strict"
 
     $('#invoice-circle-1').circleProgress({

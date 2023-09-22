@@ -89,13 +89,13 @@ jQuery(".form-valide").validate({
     ignore: [],
     errorClass: "invalid-feedback animated fadeInUp",
     errorElement: "div",
-    errorPlacement: function(e, a) {
+    errorPlacement: function (e, a) {
         jQuery(a).parents(".form-group > div").append(e)
     },
-    highlight: function(e) {
+    highlight: function (e) {
         jQuery(e).closest(".form-group").removeClass("is-invalid").addClass("is-invalid")
     },
-    success: function(e) {
+    success: function (e) {
         jQuery(e).closest(".form-group").removeClass("is-invalid"), jQuery(e).remove()
     },
 });
@@ -126,17 +126,15 @@ jQuery(".form-valide-with-icon").validate({
     ignore: [],
     errorClass: "invalid-feedback animated fadeInUp",
     errorElement: "div",
-    errorPlacement: function(e, a) {
+    errorPlacement: function (e, a) {
         jQuery(a).parents(".form-group > div").append(e)
     },
-    highlight: function(e) {
+    highlight: function (e) {
         jQuery(e).closest(".form-group").removeClass("is-invalid").addClass("is-invalid")
     },
-    success: function(e) {
+    success: function (e) {
         jQuery(e).closest(".form-group").removeClass("is-invalid").addClass("is-valid")
     }
-
-
 
 
 });

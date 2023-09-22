@@ -1,8 +1,36 @@
-@model dynamic
+@model List<StaffViewModel>
 
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
 }
 
-<h2>Staff</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Personel Adı</th>
+        <th>Personel Ünvan</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+        <th>Detaylar</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        
+        <tr>
+            <td>@item.StaffID</td>
+            <td>@item.FullName</td>
+            <td>@item.StaffTitle</td>
+            <td>
+                <button href="#" class="btn mb-1 btn-rounded btn-outline-danger">Sil</button>
+            </td>
+            <td>
+                <button href="#" class="btn mb-1 btn-rounded btn-outline-success">Güncelle</button>
+            </td>
+            <td>
+                <button href="#" class="btn mb-1 btn-rounded btn-outline-dark">Detaylar</button>
+            </td>
+        </tr>
+    }
+</table>
+<a href="#" class="btn mb-1 btn-rounded btn-info">Yeni Personel</a>

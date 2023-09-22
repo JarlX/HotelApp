@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     'use strict';
 
     $.plot("#flotBar1", [{
@@ -113,10 +113,10 @@ $(function() {
     ];
 
     var plot = $.plot($('#flotLine1'), [{
-            data: newCust,
-            label: 'New Customer',
-            color: '#ff5e5e'
-        },
+        data: newCust,
+        label: 'New Customer',
+        color: '#ff5e5e'
+    },
         {
             data: retCust,
             label: 'Returning Customer',
@@ -164,10 +164,10 @@ $(function() {
     });
 
     var plot = $.plot($('#flotLine2'), [{
-            data: newCust,
-            label: 'New Customer',
-            color: '#ff5e5e'
-        },
+        data: newCust,
+        label: 'New Customer',
+        color: '#ff5e5e'
+    },
         {
             data: retCust,
             label: 'Returning Customer',
@@ -239,10 +239,10 @@ $(function() {
     ];
 
     var plot = $.plot($('#flotLine3'), [{
-            data: newCust2,
-            label: 'New Customer',
-            color: '#F37AAD'
-        },
+        data: newCust2,
+        label: 'New Customer',
+        color: '#F37AAD'
+    },
         {
             data: retCust2,
             label: 'Returning Customer',
@@ -290,10 +290,10 @@ $(function() {
     });
 
     var plot = $.plot($('#flotLine4'), [{
-            data: newCust2,
-            label: 'New Customer',
-            color: '#F37AAD'
-        },
+        data: newCust2,
+        label: 'New Customer',
+        color: '#F37AAD'
+    },
         {
             data: retCust2,
             label: 'Returning Customer',
@@ -346,10 +346,10 @@ $(function() {
     });
 
     var plot = $.plot($('#flotArea1'), [{
-            data: newCust,
-            label: 'New Customer',
-            color: '#ff5e5e'
-        },
+        data: newCust,
+        label: 'New Customer',
+        color: '#ff5e5e'
+    },
         {
             data: retCust,
             label: 'Returning Customer',
@@ -398,10 +398,10 @@ $(function() {
     });
 
     var plot = $.plot($('#flotArea2'), [{
-            data: newCust,
-            label: 'New Customer',
-            color: '#ff5e5e'
-        },
+        data: newCust,
+        label: 'New Customer',
+        color: '#ff5e5e'
+    },
         {
             data: retCust,
             label: 'Returning Customer',
@@ -455,7 +455,7 @@ $(function() {
 
     var previousPoint = null;
 
-    $('#flotLine3, #flotLine4').bind('plothover', function(event, pos, item) {
+    $('#flotLine3, #flotLine4').bind('plothover', function (event, pos, item) {
         $('#x').text(pos.x.toFixed(2));
         $('#y').text(pos.y.toFixed(2));
 
@@ -476,7 +476,7 @@ $(function() {
         }
     });
 
-    $('#flotLine3, #flotLine4').bind('plotclick', function(event, pos, item) {
+    $('#flotLine3, #flotLine4').bind('plotclick', function (event, pos, item) {
         if (item) {
             plot.highlight(item.series, item.datapoint);
         }
@@ -604,12 +604,12 @@ $(function() {
 
     /**************** PIE CHART *******************/
     var piedata = [{
-            label: "Series 1",
-            data: [
-                [1, 50]
-            ],
-            color: '#e1e8f0'
-        },
+        label: "Series 1",
+        data: [
+            [1, 50]
+        ],
+        color: '#e1e8f0'
+    },
         {
             label: "Series 2",
             data: [

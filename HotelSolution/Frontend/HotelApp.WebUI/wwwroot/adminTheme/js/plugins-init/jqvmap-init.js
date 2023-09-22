@@ -1,7 +1,7 @@
-(function($) {
+(function ($) {
     "use strict"
 
-    $('#world-map').vectorMap({ 
+    $('#world-map').vectorMap({
         map: 'world_en',
         backgroundColor: '#a5bfdd',
         borderColor: '#818181',
@@ -16,18 +16,17 @@
         selectedColor: '#c9dfaf',
         selectedRegions: null,
         showTooltip: true,
-        onRegionClick: function(element, code, region)
-        {
+        onRegionClick: function (element, code, region) {
             var message = 'You clicked "'
                 + region
                 + '" which has the code: '
                 + code.toUpperCase();
-     
+
             alert(message);
         }
     });
 
-    $('#usa').vectorMap({ 
+    $('#usa').vectorMap({
         map: 'usa_en',
         backgroundColor: '#a5bfdd',
         borderColor: '#818181',
@@ -42,20 +41,15 @@
         selectedColor: '#c9dfaf',
         selectedRegions: null,
         showTooltip: true,
-        onRegionClick: function(element, code, region)
-        {
+        onRegionClick: function (element, code, region) {
             var message = 'You clicked "'
                 + region
                 + '" which has the code: '
                 + code.toUpperCase();
-     
+
             alert(message);
         }
     });
-
-
-
-
 
 
 })(jQuery);

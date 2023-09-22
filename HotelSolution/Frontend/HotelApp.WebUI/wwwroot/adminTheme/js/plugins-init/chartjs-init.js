@@ -179,11 +179,6 @@
     });
 
 
-
-
-
-
-
     //line chart
     var ctx = document.getElementById("lineChart");
     ctx.height = 150;
@@ -425,10 +420,7 @@
     });
 
 
-
-
 })(jQuery);
-
 
 
 let draw = Chart.controllers.line.prototype.draw;
@@ -466,18 +458,18 @@ myChart = new Chart(nk, {
             pointHoverRadius: 6,
             fill: !1
         },
-        {
-            data: [20, 70, 300, 120, 180, 220, 450, 250],
-            borderWidth: 4,
-            borderColor: "#4d7cff",
-            pointBackgroundColor: "#FFF",
-            pointBorderColor: "#4d7cff",
-            pointHoverBackgroundColor: "#FFF",
-            pointHoverBorderColor: "#4d7cff",
-            pointRadius: 0,
-            pointHoverRadius: 6,
-            fill: !1
-        }
+            {
+                data: [20, 70, 300, 120, 180, 220, 450, 250],
+                borderWidth: 4,
+                borderColor: "#4d7cff",
+                pointBackgroundColor: "#FFF",
+                pointBorderColor: "#4d7cff",
+                pointHoverBackgroundColor: "#FFF",
+                pointHoverBorderColor: "#4d7cff",
+                pointRadius: 0,
+                pointHoverRadius: 6,
+                fill: !1
+            }
         ]
     },
     options: {

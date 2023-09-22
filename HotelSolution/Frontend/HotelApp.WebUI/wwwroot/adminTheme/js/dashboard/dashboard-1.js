@@ -1,9 +1,9 @@
-(function($) {
+(function ($) {
     "use strict"
 
 
     //todo list
-    $(".tdl-new").on('keypress', function(e) {
+    $(".tdl-new").on('keypress', function (e) {
 
         var code = (e.keyCode ? e.keyCode : e.which);
 
@@ -30,14 +30,11 @@
     });
 
 
-
-
-
-    $(".tdl-content a").on("click", function() {
+    $(".tdl-content a").on("click", function () {
 
         var _li = $(this).parent().parent("li");
 
-        _li.addClass("remove").stop().delay(100).slideUp("fast", function() {
+        _li.addClass("remove").stop().delay(100).slideUp("fast", function () {
 
             _li.remove();
 
@@ -46,16 +43,15 @@
         return false;
 
     });
-
 
 
     // for dynamically created a tags
 
-    $(".tdl-content").on('click', "a", function() {
+    $(".tdl-content").on('click', "a", function () {
 
         var _li = $(this).parent().parent("li");
 
-        _li.addClass("remove").stop().delay(100).slideUp("fast", function() {
+        _li.addClass("remove").stop().delay(100).slideUp("fast", function () {
 
             _li.remove();
 
@@ -64,52 +60,46 @@
         return false;
 
     });
-
-
-
-
-
-
 
 
 })(jQuery);
 
 
-(function($) {
+(function ($) {
     "use strict"
 
-    var i = new Datamap( {
-        scope: "world", 
-        element: document.getElementById("world-map"), 
-        responsive: !0, 
+    var i = new Datamap({
+        scope: "world",
+        element: document.getElementById("world-map"),
+        responsive: !0,
         geographyConfig: {
-            popupOnHover: !1, 
-            highlightOnHover: !1, 
-            borderColor: "transparent", 
-            borderWidth: 1, 
-            highlightBorderWidth: 3, 
-            highlightFillColor: "rgba(0,123,255,0.5)", 
-            highlightBorderColor: "transparent", 
+            popupOnHover: !1,
+            highlightOnHover: !1,
+            borderColor: "transparent",
+            borderWidth: 1,
+            highlightBorderWidth: 3,
+            highlightFillColor: "rgba(0,123,255,0.5)",
+            highlightBorderColor: "transparent",
             borderWidth: 1
-        }, 
+        },
         bubblesConfig: {
             popupTemplate: function (e, i) {
                 return '<div class="datamap-sales-hover-tooltip">' + i.country + '<span class="ml-2"></span>' + i.sold + "</div>"
-            }, 
-            borderWidth: 0, 
-            highlightBorderWidth: 3, 
-            highlightFillColor: "rgba(0,123,255,0.5)", 
-            highlightBorderColor: "transparent", 
+            },
+            borderWidth: 0,
+            highlightBorderWidth: 3,
+            highlightFillColor: "rgba(0,123,255,0.5)",
+            highlightBorderColor: "transparent",
             fillOpacity: .75
-        }, 
+        },
         fills: {
-            Visited: "#777", 
-            neato: "#777", 
-            white: "#777", 
+            Visited: "#777",
+            neato: "#777",
+            white: "#777",
             defaultFill: "#EBEFF2"
         }
     });
-    
+
     i.bubbles([{
         centered: "USA", fillKey: "white", radius: 5, sold: "$500", country: "United States"
     }, {
@@ -126,74 +116,64 @@
         centered: "BGD", fillKey: "Visited", radius: 5, sold: "$1500", country: "Bangladesh"
     }
     ]),
-    window.addEventListener("resize", function (e) {
-        i.resize()
-    });
-
-
-
+        window.addEventListener("resize", function (e) {
+            i.resize()
+        });
 
 
 })(jQuery);
 
-(function($) {
+(function ($) {
     "use strict"
 
 
-     // LINE CHART
-      // Morris bar chart
- Morris.Bar({
-    element: 'morris-bar-chart',
-    data: [{
-        y: '2016',
-        a: 100,
-        b: 90,
-    }, {
-        y: '2017',
-        a: 75,
-        b: 65,
-    }, {
-        y: '2018',
-        a: 50,
-        b: 40,
-    }, {
-        y: '2019',
-        a: 75,
-        b: 65,
-    }, {
-        y: '2020',
-        a: 50,
-        b: 40,
-    }, {
-        y: '2021',
-        a: 75,
-        b: 65,
-    }, {
-        y: '2022',
-        a: 100,
-        b: 90,
-    }],
-    xkey: 'y',
-    ykeys: ['a', 'b', 'c'],
-    labels: ['A', 'B', 'C'],
-    barColors: ['#FC6C8E', '#7571f9'],
-    hideHover: 'auto',
-    gridLineColor: 'transparent',
-    resize: true
-});
-
-
-
-
-
-
-
+    // LINE CHART
+    // Morris bar chart
+    Morris.Bar({
+        element: 'morris-bar-chart',
+        data: [{
+            y: '2016',
+            a: 100,
+            b: 90,
+        }, {
+            y: '2017',
+            a: 75,
+            b: 65,
+        }, {
+            y: '2018',
+            a: 50,
+            b: 40,
+        }, {
+            y: '2019',
+            a: 75,
+            b: 65,
+        }, {
+            y: '2020',
+            a: 50,
+            b: 40,
+        }, {
+            y: '2021',
+            a: 75,
+            b: 65,
+        }, {
+            y: '2022',
+            a: 100,
+            b: 90,
+        }],
+        xkey: 'y',
+        ykeys: ['a', 'b', 'c'],
+        labels: ['A', 'B', 'C'],
+        barColors: ['#FC6C8E', '#7571f9'],
+        hideHover: 'auto',
+        gridLineColor: 'transparent',
+        resize: true
+    });
 
 
 })(jQuery);
 
 
-(function($) {
+(function ($) {
     "use strict"
 
 
@@ -212,14 +192,10 @@
     });
 
 
-
-
-
 })(jQuery);
 
 
-
-(function($) {
+(function ($) {
     "use strict"
 
     let ctx = document.getElementById("chart_widget_2");
@@ -307,12 +283,9 @@
     });
 
 
-    
-
-
 })(jQuery);
 
-(function($) {
+(function ($) {
     "use strict"
 
     let ctx = document.getElementById("chart_widget_3");
@@ -390,17 +363,13 @@
     });
 
 
-    
-
-
 })(jQuery);
 
 
-
 /*******************
-Chart Chartist
-*******************/
-(function($) {
+ Chart Chartist
+ *******************/
+(function ($) {
     "use strict"
 
 
@@ -447,11 +416,9 @@ Chart Chartist
 })(jQuery);
 
 
-
-
 /*******************
-Pignose Calender
-*******************/
+ Pignose Calender
+ *******************/
 (function ($) {
     "use strict";
 

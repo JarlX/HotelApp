@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
     "use strict"
 
     //default timepicker
@@ -25,10 +25,9 @@
 
     //time limits
     $('.timepicker-limits').pickatime({
-        min: new Date(2015,3,20,7),
-        max: new Date(2015,7,14,18,30)
+        min: new Date(2015, 3, 20, 7),
+        max: new Date(2015, 7, 14, 18, 30)
     });
-
 
 
 })(jQuery);

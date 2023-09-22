@@ -17,25 +17,25 @@
                 },
                 backgroundColor: '#0000FF',
             },
-            {
-                label: '',
-                data: [5, 6, 4.5, 5.5, 3, 6, 4.5, 6, 8, 3, 5.5, 4, 6, 9, 12, 4, 3, 6, 4.5, 6, 8, 4.5, 5, 6, 4.5, 5.5,],
-                datalabels: {
-                    align: 'center',
-                    anchor: 'center'
+                {
+                    label: '',
+                    data: [5, 6, 4.5, 5.5, 3, 6, 4.5, 6, 8, 3, 5.5, 4, 6, 9, 12, 4, 3, 6, 4.5, 6, 8, 4.5, 5, 6, 4.5, 5.5,],
+                    datalabels: {
+                        align: 'center',
+                        anchor: 'center'
+                    },
+                    backgroundColor: '#00A2FF',
                 },
-                backgroundColor: '#00A2FF',
-            },
 
-            {
-                label: '',
-                data: [5, 6, 4.5, 5.5, 3, 6, 4.5, 6, 8, 3, 5.5, 4, 6, 9, 12, 4, 3, 6, 4.5, 6, 8, 4.5, 5, 6, 4.5, 5.5,],
-                datalabels: {
-                    align: 'center',
-                    anchor: 'center'
-                },
-                backgroundColor: '#34C73B'
-            }]
+                {
+                    label: '',
+                    data: [5, 6, 4.5, 5.5, 3, 6, 4.5, 6, 8, 3, 5.5, 4, 6, 9, 12, 4, 3, 6, 4.5, 6, 8, 4.5, 5, 6, 4.5, 5.5,],
+                    datalabels: {
+                        align: 'center',
+                        anchor: 'center'
+                    },
+                    backgroundColor: '#34C73B'
+                }]
         },
         options: {
             responsive: true,
@@ -78,29 +78,29 @@
                 borderColor: 'rgba(0, 0, 255, .5)',
                 fill: false
             },
-            {
-                label: '',
-                data: [5, 6, 4.5, 5.5, 3, 6, 4.5, 6, 8, 3, 5.5, 4, 6, 9, 12, 4, 3, 6, 4.5, 6, 8, 4.5, 5, 6, 4.5, 5.5,],
-                datalabels: {
-                    align: 'center',
-                    anchor: 'center'
+                {
+                    label: '',
+                    data: [5, 6, 4.5, 5.5, 3, 6, 4.5, 6, 8, 3, 5.5, 4, 6, 9, 12, 4, 3, 6, 4.5, 6, 8, 4.5, 5, 6, 4.5, 5.5,],
+                    datalabels: {
+                        align: 'center',
+                        anchor: 'center'
+                    },
+                    backgroundColor: '#00A2FF',
+                    borderColor: 'rgba(0, 162, 255, .5)',
+                    fill: false
                 },
-                backgroundColor: '#00A2FF',
-                borderColor: 'rgba(0, 162, 255, .5)',
-                fill: false
-            },
 
-            {
-                label: '',
-                data: [5, 6, 4.5, 5.5, 3, 6, 4.5, 6, 8, 3, 5.5, 4, 6, 9, 12, 4, 3, 6, 4.5, 6, 8, 4.5, 5, 6, 4.5, 5.5,],
-                datalabels: {
-                    align: 'center',
-                    anchor: 'center'
-                },
-                backgroundColor: '#34C73B',
-                borderColor: 'rgba(52, 199, 59, .5)',
-                fill: false
-            }]
+                {
+                    label: '',
+                    data: [5, 6, 4.5, 5.5, 3, 6, 4.5, 6, 8, 3, 5.5, 4, 6, 9, 12, 4, 3, 6, 4.5, 6, 8, 4.5, 5, 6, 4.5, 5.5,],
+                    datalabels: {
+                        align: 'center',
+                        anchor: 'center'
+                    },
+                    backgroundColor: '#34C73B',
+                    borderColor: 'rgba(52, 199, 59, .5)',
+                    fill: false
+                }]
         },
         options: {
             responsive: true,
@@ -147,29 +147,29 @@
                 borderColor: '#0000FF',
                 fill: true,
             },
-            {
-                label: '',
-                data: [5, 6, 4.5, 5.5, 3, 6, 4.5, 6, 8, 3, 5.5, 4, 6, 9, 12, 4, 3, 6, 4.5, 6, 8, 4.5, 5, 6, 4.5, 5.5,],
-                datalabels: {
-                    align: 'center',
-                    anchor: 'center'
+                {
+                    label: '',
+                    data: [5, 6, 4.5, 5.5, 3, 6, 4.5, 6, 8, 3, 5.5, 4, 6, 9, 12, 4, 3, 6, 4.5, 6, 8, 4.5, 5, 6, 4.5, 5.5,],
+                    datalabels: {
+                        align: 'center',
+                        anchor: 'center'
+                    },
+                    backgroundColor: 'rgba(0, 162, 255, .5)',
+                    borderColor: '#00A2FF',
+                    fill: true,
                 },
-                backgroundColor: 'rgba(0, 162, 255, .5)',
-                borderColor: '#00A2FF',
-                fill: true,
-            },
 
-            {
-                label: '',
-                data: [5, 6, 4.5, 5.5, 3, 6, 4.5, 6, 8, 3, 5.5, 4, 6, 9, 12, 4, 3, 6, 4.5, 6, 8, 4.5, 5, 6, 4.5, 5.5,],
-                datalabels: {
-                    align: 'center',
-                    anchor: 'center'
-                },
-                backgroundColor: 'rgba(52, 199, 59, .5)',
-                borderColor: '#34C73B',
-                fill: true,
-            }]
+                {
+                    label: '',
+                    data: [5, 6, 4.5, 5.5, 3, 6, 4.5, 6, 8, 3, 5.5, 4, 6, 9, 12, 4, 3, 6, 4.5, 6, 8, 4.5, 5, 6, 4.5, 5.5,],
+                    datalabels: {
+                        align: 'center',
+                        anchor: 'center'
+                    },
+                    backgroundColor: 'rgba(52, 199, 59, .5)',
+                    borderColor: '#34C73B',
+                    fill: true,
+                }]
         },
         options: {
             responsive: true,
@@ -218,36 +218,36 @@
                     '#F44336'
                 ],
             },
-            {
-                label: '',
-                data: [5, 6, 4.5, 5.5],
-                datalabels: {
-                    // align: 'center',
-                    anchor: 'center',
-                    backgroundColor: null,
-                    borderWidth: 0,
+                {
+                    label: '',
+                    data: [5, 6, 4.5, 5.5],
+                    datalabels: {
+                        // align: 'center',
+                        anchor: 'center',
+                        backgroundColor: null,
+                        borderWidth: 0,
+                    },
+                    backgroundColor: [
+                        '#F44336',
+                        '#0000FF',
+                        '#00A2FF',
+                        '#34C73B'
+                    ],
                 },
-                backgroundColor: [
-                    '#F44336',
-                    '#0000FF',
-                    '#00A2FF',
-                    '#34C73B'
-                ],
-            },
 
-            {
-                label: '',
-                data: [5, 6, 4.5, 5.5,],
-                datalabels: {
-                    anchor: 'start'
-                },
-                backgroundColor: [
-                    '#34C73B  ',
-                    '#00A2FF',
-                    '#0000FF',
-                    '#F44336'
-                ],
-            }]
+                {
+                    label: '',
+                    data: [5, 6, 4.5, 5.5,],
+                    datalabels: {
+                        anchor: 'start'
+                    },
+                    backgroundColor: [
+                        '#34C73B  ',
+                        '#00A2FF',
+                        '#0000FF',
+                        '#F44336'
+                    ],
+                }]
         },
         options: {
             responsive: true,
@@ -293,39 +293,39 @@
                     '#DCDCDC'
                 ],
             },
-            {
-                label: '',
-                data: [26, 31, 32, 33, 34, 38, 41, 44, 46, 50],
-                backgroundColor: [
-                    '#F44336',
-                    '#00A2FF',
-                    '#34C73B',
-                    '#0000FF',
-                    '#F44336',
-                    '#00A2FF',
-                    '#34C73B',
-                    '#0000FF',
-                    '#F44336',
-                    '#00A2FF'
-                ],
-            },
+                {
+                    label: '',
+                    data: [26, 31, 32, 33, 34, 38, 41, 44, 46, 50],
+                    backgroundColor: [
+                        '#F44336',
+                        '#00A2FF',
+                        '#34C73B',
+                        '#0000FF',
+                        '#F44336',
+                        '#00A2FF',
+                        '#34C73B',
+                        '#0000FF',
+                        '#F44336',
+                        '#00A2FF'
+                    ],
+                },
 
-            {
-                label: '',
-                data: [25, 26, 28, 30, 35, 43, 44, 45, 48, 50],
-                backgroundColor: [
-                    '#34C73B',
-                    '#0000FF',
-                    '#DCDCDC',
-                    '#00A2FF',
-                    '#34C73B',
-                    '#0000FF',
-                    '#DCDCDC',
-                    '#00A2FF',
-                    '#34C73B',
-                    '#0000FF'
-                ],
-            }]
+                {
+                    label: '',
+                    data: [25, 26, 28, 30, 35, 43, 44, 45, 48, 50],
+                    backgroundColor: [
+                        '#34C73B',
+                        '#0000FF',
+                        '#DCDCDC',
+                        '#00A2FF',
+                        '#34C73B',
+                        '#0000FF',
+                        '#DCDCDC',
+                        '#00A2FF',
+                        '#34C73B',
+                        '#0000FF'
+                    ],
+                }]
         },
         options: {
             responsive: true,
@@ -363,19 +363,19 @@
                 backgroundColor: 'rgba(244, 67, 54, .3)',
                 borderColor: '#F44336',
             },
-            {
-                label: '',
-                data: [45, 32, 50, 55, 79, 70],
-                backgroundColor: 'rgba(0, 162, 255, .3)',
-                borderColor: '#00A2FF',
-            },
+                {
+                    label: '',
+                    data: [45, 32, 50, 55, 79, 70],
+                    backgroundColor: 'rgba(0, 162, 255, .3)',
+                    borderColor: '#00A2FF',
+                },
 
-            {
-                label: '',
-                data: [8, 80, 23, 39, 69, 41],
-                backgroundColor: 'rgba(0, 0, 255, .5)',
-                borderColor: '#0000FF',
-            }]
+                {
+                    label: '',
+                    data: [8, 80, 23, 39, 69, 41],
+                    backgroundColor: 'rgba(0, 0, 255, .5)',
+                    borderColor: '#0000FF',
+                }]
         },
         options: {
             responsive: true,
@@ -434,67 +434,67 @@
                 backgroundColor: '#F44336',
                 borderColor: '#F44336',
             },
-            {
-                label: '',
-                data: [{
-                    x: 30,
-                    y: 45,
-                    r: 25
-                }, {
-                    x: 42,
-                    y: 98,
-                    r: 12
-                }, {
-                    x: 63,
-                    y: 28,
-                    r: 49
-                }, {
-                    x: 75,
-                    y: 38,
-                    r: 83
-                }, {
-                    x: 65,
-                    y: 91,
-                    r: 20
-                }, {
-                    x: 10,
-                    y: 0,
-                    r: 45
-                }],
-                backgroundColor: '#00A2FF',
-                borderColor: '#00A2FF',
-            },
+                {
+                    label: '',
+                    data: [{
+                        x: 30,
+                        y: 45,
+                        r: 25
+                    }, {
+                        x: 42,
+                        y: 98,
+                        r: 12
+                    }, {
+                        x: 63,
+                        y: 28,
+                        r: 49
+                    }, {
+                        x: 75,
+                        y: 38,
+                        r: 83
+                    }, {
+                        x: 65,
+                        y: 91,
+                        r: 20
+                    }, {
+                        x: 10,
+                        y: 0,
+                        r: 45
+                    }],
+                    backgroundColor: '#00A2FF',
+                    borderColor: '#00A2FF',
+                },
 
-            {
-                label: '',
-                data: [{
-                    x: 0,
-                    y: 100,
-                    r: 80
-                }, {
-                    x: 90,
-                    y: 42,
-                    r: 23
-                }, {
-                    x: 63,
-                    y: 35,
-                    r: 73
-                }, {
-                    x: 97,
-                    y: 56,
-                    r: 19
-                }, {
-                    x: 10,
-                    y: 45,
-                    r: 15
-                }, {
-                    x: 100,
-                    y: 0,
-                    r: 65
-                }],
-                backgroundColor: '#0000FF',
-                borderColor: '#0000FF',
-            }]
+                {
+                    label: '',
+                    data: [{
+                        x: 0,
+                        y: 100,
+                        r: 80
+                    }, {
+                        x: 90,
+                        y: 42,
+                        r: 23
+                    }, {
+                        x: 63,
+                        y: 35,
+                        r: 73
+                    }, {
+                        x: 97,
+                        y: 56,
+                        r: 19
+                    }, {
+                        x: 10,
+                        y: 45,
+                        r: 15
+                    }, {
+                        x: 100,
+                        y: 0,
+                        r: 65
+                    }],
+                    backgroundColor: '#0000FF',
+                    borderColor: '#0000FF',
+                }]
         },
         options: {
             responsive: true,
@@ -522,7 +522,7 @@
             }
         }
     });
-    
+
     var ctx = document.getElementById("chart-7");
     ctx.height = 100;
     var myChart = new Chart(ctx, {
@@ -541,30 +541,30 @@
                 borderColor: 'rgba(244, 67, 54, .8)',
                 fill: false
             },
-            {
-                label: 'Canada',
-                data: [5, 6, 4.5, 5.5, 3, 6, 4.5, 6, 8, 3, 5.5, 4, 6, 9, 12, 4, 3, 6, 4.5, 6, 8, 4.5, 5, 6, 4.5, 5.5,],
-                datalabels: {
-                    align: 'center',
-                    anchor: 'center'
+                {
+                    label: 'Canada',
+                    data: [5, 6, 4.5, 5.5, 3, 6, 4.5, 6, 8, 3, 5.5, 4, 6, 9, 12, 4, 3, 6, 4.5, 6, 8, 4.5, 5, 6, 4.5, 5.5,],
+                    datalabels: {
+                        align: 'center',
+                        anchor: 'center'
+                    },
+                    backgroundColor: '#00A2FF',
+                    borderColor: 'rgba(0, 162, 255, .8)',
+                    fill: false
                 },
-                backgroundColor: '#00A2FF',
-                borderColor: 'rgba(0, 162, 255, .8)',
-                fill: false
-            },
 
-            {
-                label: 'USA',
-                data: [5, 6, 4.5, 5.5, 3, 6, 4.5, 6, 8, 3, 5.5, 4, 6, 9, 12, 4, 3, 6, 4.5, 6, 8, 4.5, 5, 6, 4.5, 5.5,],
-                datalabels: {
-                    align: function (context) {
-                        return context.active ? 'end' : 'center';
-                    }
-                },
-                backgroundColor: '#0000FF',
-                borderColor: 'rgba(0, 0, 255, .8)',
-                fill: false
-            }]
+                {
+                    label: 'USA',
+                    data: [5, 6, 4.5, 5.5, 3, 6, 4.5, 6, 8, 3, 5.5, 4, 6, 9, 12, 4, 3, 6, 4.5, 6, 8, 4.5, 5, 6, 4.5, 5.5,],
+                    datalabels: {
+                        align: function (context) {
+                            return context.active ? 'end' : 'center';
+                        }
+                    },
+                    backgroundColor: '#0000FF',
+                    borderColor: 'rgba(0, 0, 255, .8)',
+                    fill: false
+                }]
         },
         options: {
             responsive: true,
@@ -616,9 +616,6 @@
             }
         }
     });
-
-
-
 
 
 })(jQuery);

@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
     "use strict"
 
     $('.repeater-default').repeater();
@@ -9,7 +9,7 @@
             $(this).slideDown();
         },
         hide: function (remove) {
-            if(confirm('Are you sure you want to remove this item?')) {
+            if (confirm('Are you sure you want to remove this item?')) {
                 $(this).slideUp(remove);
             }
         }
@@ -23,19 +23,6 @@
             model: 'Mustang'
         }
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 })(jQuery);

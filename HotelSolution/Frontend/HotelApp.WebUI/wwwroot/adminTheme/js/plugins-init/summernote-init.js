@@ -1,4 +1,4 @@
-jQuery(document).ready(function() {
+jQuery(document).ready(function () {
     $(".summernote").summernote({
         height: 350,
         minHeight: null,
@@ -7,8 +7,8 @@ jQuery(document).ready(function() {
     }), $(".inline-editor").summernote({
         airMode: !0
     })
-}), window.edit = function() {
+}), window.edit = function () {
     $(".click2edit").summernote()
-}, window.save = function() {
+}, window.save = function () {
     $(".click2edit").summernote("destroy")
 };

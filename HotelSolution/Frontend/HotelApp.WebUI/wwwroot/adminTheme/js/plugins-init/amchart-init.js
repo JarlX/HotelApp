@@ -325,8 +325,6 @@ $(document).ready(function () {
     }];
 
 
-
-
     var chart = AmCharts.makeChart("duration-value-axis", {
         "type": "serial",
         "theme": "dark",
@@ -457,12 +455,6 @@ $(document).ready(function () {
     });
 
 
-
-
-
-
-
-
     /**
      * SVG path for target icon
      */
@@ -586,12 +578,6 @@ $(document).ready(function () {
     });
 
 
-
-
-
-
-
-
     //Column chart with images on top
     var chart = AmCharts.makeChart("column", {
         "type": "serial",
@@ -658,8 +644,6 @@ $(document).ready(function () {
             "enabled": true
         }
     });
-
-
 
 
     //Zoomable Value Axis
@@ -2145,8 +2129,8 @@ $(document).ready(function () {
             "enabled": true,
             "position": "bottom-right"
         },
-        
-        
+
+
     });
 
     var chart = AmCharts.makeChart("comparing-stock-indices", {
@@ -2290,41 +2274,41 @@ $(document).ready(function () {
 
         },
 
-        {
-            "title": "Volume",
-            "percentHeight": 30,
-            "marginTop": 1,
-            "columnWidth": 0.6,
-            "showCategoryAxis": false,
+            {
+                "title": "Volume",
+                "percentHeight": 30,
+                "marginTop": 1,
+                "columnWidth": 0.6,
+                "showCategoryAxis": false,
 
-            "stockGraphs": [{
-                "valueField": "volume",
-                "openField": "open",
-                "type": "column",
-                "showBalloon": false,
-                "fillAlphas": 1,
-                "lineColor": "#fff",
-                "fillColors": "#fff",
-                "negativeLineColor": "#F44336",
-                "negativeFillColors": "#F44336",
-                "useDataSetColors": false
-            }],
+                "stockGraphs": [{
+                    "valueField": "volume",
+                    "openField": "open",
+                    "type": "column",
+                    "showBalloon": false,
+                    "fillAlphas": 1,
+                    "lineColor": "#fff",
+                    "fillColors": "#fff",
+                    "negativeLineColor": "#F44336",
+                    "negativeFillColors": "#F44336",
+                    "useDataSetColors": false
+                }],
 
-            "stockLegend": {
-                "markerType": "none",
-                "markerSize": 0,
-                "labelText": "",
-                "periodValueTextRegular": "[[value.close]]"
-            },
+                "stockLegend": {
+                    "markerType": "none",
+                    "markerSize": 0,
+                    "labelText": "",
+                    "periodValueTextRegular": "[[value.close]]"
+                },
 
-            "valueAxes": [{
-                "usePrefixes": true
-            }]
-        }
+                "valueAxes": [{
+                    "usePrefixes": true
+                }]
+            }
         ],
 
         "panelsSettings": {
-               "color": "#fff",
+            "color": "#fff",
             "plotAreaFillColors": "transparent",
             "plotAreaFillAlphas": 1,
             "marginLeft": 60,
@@ -2402,18 +2386,18 @@ $(document).ready(function () {
                 "selected": true,
                 "label": "2Y"
             },
-            /* {
-                 "period": "YTD",
-                 "label": "YTD"
-               },*/
-            {
-                "period": "MAX",
-                "label": "MAX"
-            }
+                /* {
+                     "period": "YTD",
+                     "label": "YTD"
+                   },*/
+                {
+                    "period": "MAX",
+                    "label": "MAX"
+                }
             ]
         },
-        
-        
+
+
     });
 
 
@@ -2542,33 +2526,33 @@ $(document).ready(function () {
             }
         },
 
-        {
-            "title": "Volume",
-            "percentHeight": 30,
-            "marginTop": 1,
-            "showCategoryAxis": true,
-            "valueAxes": [{
-                "dashLength": 5
-            }],
+            {
+                "title": "Volume",
+                "percentHeight": 30,
+                "marginTop": 1,
+                "showCategoryAxis": true,
+                "valueAxes": [{
+                    "dashLength": 5
+                }],
 
-            "categoryAxis": {
-                "dashLength": 5
-            },
+                "categoryAxis": {
+                    "dashLength": 5
+                },
 
-            "stockGraphs": [{
-                "valueField": "volume",
-                "type": "column",
-                "showBalloon": false,
-                "fillAlphas": 1
-            }],
+                "stockGraphs": [{
+                    "valueField": "volume",
+                    "type": "column",
+                    "showBalloon": false,
+                    "fillAlphas": 1
+                }],
 
-            "stockLegend": {
-                "markerType": "none",
-                "markerSize": 0,
-                "labelText": "",
-                "periodValueTextRegular": "[[value.close]]"
+                "stockLegend": {
+                    "markerType": "none",
+                    "markerSize": 0,
+                    "labelText": "",
+                    "periodValueTextRegular": "[[value.close]]"
+                }
             }
-        }
         ],
 
         "chartScrollbarSettings": {
@@ -2615,11 +2599,11 @@ $(document).ready(function () {
     });
 
     /**
- * This demo uses direct URL to Poloniex exchance, which means that depending on your browser settings,
- * it may not work dure to CORS restrictions.
- * Please consult Poloniex API for further information:
- * https://poloniex.com/support/api/
- */
+     * This demo uses direct URL to Poloniex exchance, which means that depending on your browser settings,
+     * it may not work dure to CORS restrictions.
+     * Please consult Poloniex API for further information:
+     * https://poloniex.com/support/api/
+     */
 
     var chart = AmCharts.makeChart("depth-chart", {
         "type": "serial",
@@ -2646,11 +2630,9 @@ $(document).ready(function () {
                     list.sort(function (a, b) {
                         if (a.value > b.value) {
                             return 1;
-                        }
-                        else if (a.value < b.value) {
+                        } else if (a.value < b.value) {
                             return -1;
-                        }
-                        else {
+                        } else {
                             return 0;
                         }
                     });
@@ -2660,8 +2642,7 @@ $(document).ready(function () {
                         for (var i = list.length - 1; i >= 0; i--) {
                             if (i < (list.length - 1)) {
                                 list[i].totalvolume = list[i + 1].totalvolume + list[i].volume;
-                            }
-                            else {
+                            } else {
                                 list[i].totalvolume = list[i].volume;
                             }
                             var dp = {};
@@ -2670,13 +2651,11 @@ $(document).ready(function () {
                             dp[type + "totalvolume"] = list[i].totalvolume;
                             res.unshift(dp);
                         }
-                    }
-                    else {
+                    } else {
                         for (var i = 0; i < list.length; i++) {
                             if (i > 0) {
                                 list[i].totalvolume = list[i - 1].totalvolume + list[i].volume;
-                            }
-                            else {
+                            } else {
                                 list[i].totalvolume = list[i].volume;
                             }
                             var dp = {};
@@ -2759,8 +2738,7 @@ $(document).ready(function () {
             txt = "Ask: <strong>" + formatNumber(item.dataContext.value, graph.chart, 4) + "</strong><br />"
                 + "Total volume: <strong>" + formatNumber(item.dataContext.askstotalvolume, graph.chart, 4) + "</strong><br />"
                 + "Volume: <strong>" + formatNumber(item.dataContext.asksvolume, graph.chart, 4) + "</strong>";
-        }
-        else {
+        } else {
             txt = "Bid: <strong>" + formatNumber(item.dataContext.value, graph.chart, 4) + "</strong><br />"
                 + "Total volume: <strong>" + formatNumber(item.dataContext.bidstotalvolume, graph.chart, 4) + "</strong><br />"
                 + "Volume: <strong>" + formatNumber(item.dataContext.bidsvolume, graph.chart, 4) + "</strong>";

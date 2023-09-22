@@ -1,21 +1,21 @@
-(function($) {
+(function ($) {
     "use strict"
 
     //primary alerts
-    $('.primary-alert-left-top').on('click', function() {
+    $('.primary-alert-left-top').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'primary', 
+            type: 'primary',
             offset: 20,
             spacing: 5,
             z_index: 1031,
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'top', 
+                from: 'top',
                 align: 'left'
             },
             animate: {
@@ -25,15 +25,15 @@
         });
     });
 
-    $('.primary-alert-right-top').on('click', function() {
+    $('.primary-alert-right-top').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'primary', 
+            type: 'primary',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 320
             },
             spacing: 5,
@@ -41,7 +41,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'top', 
+                from: 'top',
                 align: 'right'
             },
             animate: {
@@ -51,15 +51,15 @@
         });
     });
 
-    $('.primary-alert-right-bottom').on('click', function() {
+    $('.primary-alert-right-bottom').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'primary', 
+            type: 'primary',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 320
             },
             spacing: 5,
@@ -67,7 +67,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'bottom', 
+                from: 'bottom',
                 align: 'right'
             },
             animate: {
@@ -77,15 +77,15 @@
         });
     });
 
-    $('.primary-alert-left-bottom').on('click', function() {
+    $('.primary-alert-left-bottom').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'primary', 
+            type: 'primary',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 20
             },
             spacing: 5,
@@ -93,7 +93,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'bottom', 
+                from: 'bottom',
                 align: 'left'
             },
             animate: {
@@ -103,15 +103,15 @@
         });
     });
 
-    $('.primary-alert-center-top').on('click', function() {
+    $('.primary-alert-center-top').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'primary', 
+            type: 'primary',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 0
             },
             spacing: 5,
@@ -119,7 +119,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'top', 
+                from: 'top',
                 align: 'center'
             },
             animate: {
@@ -129,15 +129,15 @@
         });
     });
 
-    $('.primary-alert-center-bottom').on('click', function() {
+    $('.primary-alert-center-bottom').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'primary', 
+            type: 'primary',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 0
             },
             spacing: 5,
@@ -145,7 +145,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'bottom', 
+                from: 'bottom',
                 align: 'center'
             },
             animate: {
@@ -154,24 +154,23 @@
             }
         });
     });
-
 
 
     //success alerts
-    $('.success-alert-left-top').on('click', function() {
+    $('.success-alert-left-top').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'success', 
+            type: 'success',
             offset: 20,
             spacing: 5,
             z_index: 1031,
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'top', 
+                from: 'top',
                 align: 'left'
             },
             animate: {
@@ -181,15 +180,15 @@
         });
     });
 
-    $('.success-alert-right-top').on('click', function() {
+    $('.success-alert-right-top').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'success', 
+            type: 'success',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 320
             },
             spacing: 5,
@@ -197,7 +196,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'top', 
+                from: 'top',
                 align: 'right'
             },
             animate: {
@@ -207,15 +206,15 @@
         });
     });
 
-    $('.success-alert-right-bottom').on('click', function() {
+    $('.success-alert-right-bottom').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'success', 
+            type: 'success',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 320
             },
             spacing: 5,
@@ -223,7 +222,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'bottom', 
+                from: 'bottom',
                 align: 'right'
             },
             animate: {
@@ -233,15 +232,15 @@
         });
     });
 
-    $('.success-alert-left-bottom').on('click', function() {
+    $('.success-alert-left-bottom').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'success', 
+            type: 'success',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 20
             },
             spacing: 5,
@@ -249,7 +248,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'bottom', 
+                from: 'bottom',
                 align: 'left'
             },
             animate: {
@@ -259,15 +258,15 @@
         });
     });
 
-    $('.success-alert-center-top').on('click', function() {
+    $('.success-alert-center-top').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'success', 
+            type: 'success',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 0
             },
             spacing: 5,
@@ -275,7 +274,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'top', 
+                from: 'top',
                 align: 'center'
             },
             animate: {
@@ -285,15 +284,15 @@
         });
     });
 
-    $('.success-alert-center-bottom').on('click', function() {
+    $('.success-alert-center-bottom').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'success', 
+            type: 'success',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 0
             },
             spacing: 5,
@@ -301,7 +300,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'bottom', 
+                from: 'bottom',
                 align: 'center'
             },
             animate: {
@@ -310,24 +309,23 @@
             }
         });
     });
-
 
 
     //warning alets
-    $('.warning-alert-left-top').on('click', function() {
+    $('.warning-alert-left-top').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'warning', 
+            type: 'warning',
             offset: 20,
             spacing: 5,
             z_index: 1031,
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'top', 
+                from: 'top',
                 align: 'left'
             },
             animate: {
@@ -337,15 +335,15 @@
         });
     });
 
-    $('.warning-alert-right-top').on('click', function() {
+    $('.warning-alert-right-top').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'warning', 
+            type: 'warning',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 320
             },
             spacing: 5,
@@ -353,7 +351,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'top', 
+                from: 'top',
                 align: 'right'
             },
             animate: {
@@ -363,15 +361,15 @@
         });
     });
 
-    $('.warning-alert-right-bottom').on('click', function() {
+    $('.warning-alert-right-bottom').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'warning', 
+            type: 'warning',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 320
             },
             spacing: 5,
@@ -379,7 +377,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'bottom', 
+                from: 'bottom',
                 align: 'right'
             },
             animate: {
@@ -389,15 +387,15 @@
         });
     });
 
-    $('.warning-alert-left-bottom').on('click', function() {
+    $('.warning-alert-left-bottom').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'warning', 
+            type: 'warning',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 20
             },
             spacing: 5,
@@ -405,7 +403,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'bottom', 
+                from: 'bottom',
                 align: 'left'
             },
             animate: {
@@ -415,15 +413,15 @@
         });
     });
 
-    $('.warning-alert-center-top').on('click', function() {
+    $('.warning-alert-center-top').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'warning', 
+            type: 'warning',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 0
             },
             spacing: 5,
@@ -431,7 +429,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'top', 
+                from: 'top',
                 align: 'center'
             },
             animate: {
@@ -441,15 +439,15 @@
         });
     });
 
-    $('.warning-alert-center-bottom').on('click', function() {
+    $('.warning-alert-center-bottom').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'warning', 
+            type: 'warning',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 0
             },
             spacing: 5,
@@ -457,7 +455,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'bottom', 
+                from: 'bottom',
                 align: 'center'
             },
             animate: {
@@ -466,26 +464,23 @@
             }
         });
     });
-
-
-
 
 
     //danger alets
-    $('.danger-alert-left-top').on('click', function() {
+    $('.danger-alert-left-top').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'danger', 
+            type: 'danger',
             offset: 20,
             spacing: 5,
             z_index: 1031,
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'top', 
+                from: 'top',
                 align: 'left'
             },
             animate: {
@@ -495,15 +490,15 @@
         });
     });
 
-    $('.danger-alert-right-top').on('click', function() {
+    $('.danger-alert-right-top').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'danger', 
+            type: 'danger',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 320
             },
             spacing: 5,
@@ -511,7 +506,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'top', 
+                from: 'top',
                 align: 'right'
             },
             animate: {
@@ -521,15 +516,15 @@
         });
     });
 
-    $('.danger-alert-right-bottom').on('click', function() {
+    $('.danger-alert-right-bottom').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'danger', 
+            type: 'danger',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 320
             },
             spacing: 5,
@@ -537,7 +532,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'bottom', 
+                from: 'bottom',
                 align: 'right'
             },
             animate: {
@@ -547,15 +542,15 @@
         });
     });
 
-    $('.danger-alert-left-bottom').on('click', function() {
+    $('.danger-alert-left-bottom').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'danger', 
+            type: 'danger',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 20
             },
             spacing: 5,
@@ -563,7 +558,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'bottom', 
+                from: 'bottom',
                 align: 'left'
             },
             animate: {
@@ -573,15 +568,15 @@
         });
     });
 
-    $('.danger-alert-center-top').on('click', function() {
+    $('.danger-alert-center-top').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'danger', 
+            type: 'danger',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 0
             },
             spacing: 5,
@@ -589,7 +584,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'top', 
+                from: 'top',
                 align: 'center'
             },
             animate: {
@@ -599,15 +594,15 @@
         });
     });
 
-    $('.danger-alert-center-bottom').on('click', function() {
+    $('.danger-alert-center-bottom').on('click', function () {
         $.notify({
             // options
-            message: 'Congratulations! You\'ve succcessfully completed the task.' 
-        },{
+            message: 'Congratulations! You\'ve succcessfully completed the task.'
+        }, {
             // settings
-            type: 'danger', 
+            type: 'danger',
             offset: {
-                y: 20, 
+                y: 20,
                 x: 0
             },
             spacing: 5,
@@ -615,7 +610,7 @@
             delay: 5000,
             timer: 1000,
             placement: {
-                from: 'bottom', 
+                from: 'bottom',
                 align: 'center'
             },
             animate: {
@@ -624,11 +619,6 @@
             }
         });
     });
-
-
-
-
-
 
 
 })(jQuery);

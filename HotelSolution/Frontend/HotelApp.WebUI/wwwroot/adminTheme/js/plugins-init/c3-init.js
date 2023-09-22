@@ -130,7 +130,7 @@ $(document).ready(function () {
                     data3: '#F44336'
                 }
             }
-            
+
         });
         setTimeout(function () {
             chart.load({
@@ -168,8 +168,8 @@ $(document).ready(function () {
                     data2: '#0000FF'
                 },
                 regions: {
-                    'data1': [{ 'start': 1, 'end': 2, 'style': 'dashed' }, { 'start': 3 }], // currently 'dashed' style only
-                    'data2': [{ 'end': 3 }]
+                    'data1': [{'start': 1, 'end': 2, 'style': 'dashed'}, {'start': 3}], // currently 'dashed' style only
+                    'data2': [{'end': 3}]
                 }
             }
         });
@@ -272,7 +272,7 @@ $(document).ready(function () {
             },
             grid: {
                 y: {
-                    lines: [{ value: 0 }]
+                    lines: [{value: 0}]
                 }
             }
         });
@@ -290,8 +290,6 @@ $(document).ready(function () {
             chart.groups([['data1', 'data2', 'data3', 'data4']])
         }, 2000);
     });
-
-
 
 
     $(function () {
@@ -358,7 +356,6 @@ $(document).ready(function () {
     });
 
 
-
     $(function () {
         var chart = c3.generate({
             bindto: '#c3-pie-chart',
@@ -369,9 +366,15 @@ $(document).ready(function () {
                     ['data2', 120],
                 ],
                 type: 'pie',
-                onclick: function (d, i) { console.log("onclick", d, i); },
-                onmouseover: function (d, i) { console.log("onmouseover", d, i); },
-                onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+                onclick: function (d, i) {
+                    console.log("onclick", d, i);
+                },
+                onmouseover: function (d, i) {
+                    console.log("onmouseover", d, i);
+                },
+                onmouseout: function (d, i) {
+                    console.log("onmouseout", d, i);
+                }
             }
         });
         setTimeout(function () {
@@ -409,9 +412,15 @@ $(document).ready(function () {
                     ['data2', 120],
                 ],
                 type: 'donut',
-                onclick: function (d, i) { console.log("onclick", d, i); },
-                onmouseover: function (d, i) { console.log("onmouseover", d, i); },
-                onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+                onclick: function (d, i) {
+                    console.log("onclick", d, i);
+                },
+                onmouseover: function (d, i) {
+                    console.log("onmouseover", d, i);
+                },
+                onmouseout: function (d, i) {
+                    console.log("onmouseout", d, i);
+                }
             },
             donut: {
                 title: "Donut title"
@@ -450,9 +459,15 @@ $(document).ready(function () {
                     ['data', 91.4]
                 ],
                 type: 'gauge',
-                onclick: function (d, i) { console.log("onclick", d, i); },
-                onmouseover: function (d, i) { console.log("onmouseover", d, i); },
-                onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+                onclick: function (d, i) {
+                    console.log("onclick", d, i);
+                },
+                onmouseover: function (d, i) {
+                    console.log("onmouseover", d, i);
+                },
+                onmouseout: function (d, i) {
+                    console.log("onmouseout", d, i);
+                }
             },
             gauge: {
                 label: {
@@ -531,7 +546,6 @@ $(document).ready(function () {
     });
 
 
-
     $(function () {
         var chart = c3.generate({
             bindto: '#c3-additional-y-axis',
@@ -558,7 +572,6 @@ $(document).ready(function () {
     });
 
 
-
     $(function () {
         var chart = c3.generate({
             bindto: '#c3-tick-format',
@@ -576,7 +589,9 @@ $(document).ready(function () {
                 x: {
                     type: 'timeseries',
                     tick: {
-                        format: function (x) { return x.getFullYear(); }
+                        format: function (x) {
+                            return x.getFullYear();
+                        }
                         //format: '%Y' // format string is also available for timeseries data
                     }
                 }
@@ -611,7 +626,6 @@ $(document).ready(function () {
     });
 
 
-
     $(function () {
         var chart = c3.generate({
             bindto: '#c3-tick-values',
@@ -636,7 +650,6 @@ $(document).ready(function () {
             }
         });
     });
-
 
 
     $(function () {
@@ -666,7 +679,6 @@ $(document).ready(function () {
     });
 
 
-
     $(function () {
         var chart = c3.generate({
             bindto: '#c3-tick-fitting',
@@ -691,7 +703,6 @@ $(document).ready(function () {
             }
         });
     });
-
 
 
     $(function () {
@@ -724,7 +735,6 @@ $(document).ready(function () {
             }
         });
     });
-
 
 
     $(function () {
@@ -920,7 +930,6 @@ $(document).ready(function () {
             }
         });
     });
-
 
 
 });

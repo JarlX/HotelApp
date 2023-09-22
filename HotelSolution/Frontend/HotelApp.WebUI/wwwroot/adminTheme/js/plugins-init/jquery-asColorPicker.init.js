@@ -1,6 +1,6 @@
-(function($) {
+(function ($) {
     "use strict"
-    
+
     // Colorpicker
     $(".colorpicker").asColorPicker();
     $(".complex-colorpicker").asColorPicker({

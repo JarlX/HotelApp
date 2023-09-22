@@ -1,10 +1,10 @@
-(function($) {
+(function ($) {
     "use strict"
 
     const tour = new Shepherd.Tour({
         defaultStepOptions: {
-          classes: 'shadow-md bg-purple-dark',
-          scrollTo: true
+            classes: 'shadow-md bg-purple-dark',
+            scrollTo: true
         }
     });
 
@@ -12,12 +12,12 @@
         text: 'This is Navigation Header',
         attachTo: '.nav-header bottom',
         classes: 'example-step-extra-class',
-        advanceOn: '.header-right', 
+        advanceOn: '.header-right',
         buttons: [
-          {
-            text: 'Next',
-            action: tour.next
-          }
+            {
+                text: 'Next',
+                action: tour.next
+            }
         ]
     });
 
@@ -26,11 +26,11 @@
         attachTo: '.header-right bottom',
         classes: 'example-step-extra-class',
         buttons: [
-          {
-            text: 'Next',
-            action: tour.next, 
-            classes: 'btn btn-primary'
-          }
+            {
+                text: 'Next',
+                action: tour.next,
+                classes: 'btn btn-primary'
+            }
         ]
     });
 
@@ -39,10 +39,10 @@
         attachTo: '.nk-sidebar right',
         classes: 'example-step-extra-class',
         buttons: [
-          {
-            text: 'Next',
-            action: tour.next
-          }
+            {
+                text: 'Next',
+                action: tour.next
+            }
         ]
     });
 
@@ -51,10 +51,10 @@
         attachTo: '.sidebar-right-trigger left',
         classes: 'example-step-extra-class',
         buttons: [
-          {
-            text: 'Next',
-            action: tour.next
-          }
+            {
+                text: 'Next',
+                action: tour.next
+            }
         ]
     });
 
@@ -63,10 +63,10 @@
         attachTo: '#step1 top',
         classes: 'example-step-extra-class',
         buttons: [
-          {
-            text: 'Next',
-            action: tour.next
-          }
+            {
+                text: 'Next',
+                action: tour.next
+            }
         ]
     });
 
@@ -75,10 +75,10 @@
         attachTo: '#step2 top',
         classes: 'example-step-extra-class',
         buttons: [
-          {
-            text: 'Next',
-            action: tour.next
-          }
+            {
+                text: 'Next',
+                action: tour.next
+            }
         ]
     });
 
@@ -87,15 +87,14 @@
         attachTo: '#step3 top',
         classes: 'example-step-extra-class',
         buttons: [
-          {
-            text: 'Next',
-            action: tour.next
-          }
+            {
+                text: 'Next',
+                action: tour.next
+            }
         ]
     });
 
     tour.start();
-
 
 
 })(jQuery);

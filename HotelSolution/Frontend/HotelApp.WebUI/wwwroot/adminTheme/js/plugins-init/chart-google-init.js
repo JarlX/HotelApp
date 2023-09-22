@@ -1,76 +1,78 @@
-(function($) {
+(function ($) {
     "use strict"
 
-    google.load("visualization", "1", {packages:["corechart"]});
+    google.load("visualization", "1", {packages: ["corechart"]});
     google.setOnLoadCallback(drawChart1);
+
     function drawChart1() {
         var data = google.visualization.arrayToDataTable([
             ['Year', 'Sales', 'Expenses'],
-            ['2004',  1000,      400],
-            ['2005',  1170,      460],
-            ['2006',  660,       1120],
-            ['2007',  1030,      540]
+            ['2004', 1000, 400],
+            ['2005', 1170, 460],
+            ['2006', 660, 1120],
+            ['2007', 1030, 540]
         ]);
 
         var options = {
-                fontName: 'Hind Madurai',
-                backgroundColor: 'transparent',
-                height: 400,
-                fontSize: 14,
-                chartArea: {
-                    left: '5%',
-                    width: '90%',
-                    height: 350
+            fontName: 'Hind Madurai',
+            backgroundColor: 'transparent',
+            height: 400,
+            fontSize: 14,
+            chartArea: {
+                left: '5%',
+                width: '90%',
+                height: 350
+            },
+            tooltip: {
+                textStyle: {
+                    fontName: 'Hind Madurai',
+                    fontSize: 14
+                }
+            },
+            hAxis: {
+                textStyle: {
+                    color: "#FFFFFF"
                 },
-                tooltip: {
-                    textStyle: {
-                        fontName: 'Hind Madurai',
-                        fontSize: 14
-                    }
+                gridlines: {
+                    color: "transparent"
                 },
-                hAxis: {
-                    textStyle: {
-                        color: "#FFFFFF"
-                    },
-                    gridlines: {
-                        color: "transparent"
-                    },
-                    baselineColor: 'transparent'
+                baselineColor: 'transparent'
+            },
+            vAxis: {
+                textStyle: {
+                    color: "#FFFFFF"
                 },
-                vAxis: {
-                    textStyle: {
-                        color: "#FFFFFF"
-                    },
-                    baselineColor: 'transparent',
-                    gridlines: {
-                        color: 'transparent',
-                        count: 10
-                    },
-                    minValue: 0
+                baselineColor: 'transparent',
+                gridlines: {
+                    color: 'transparent',
+                    count: 10
                 },
-                legend: {
-                    position: 'top',
-                    alignment: 'center',
-                    textStyle: {
-                        fontSize: 13,
-                        color: "#FFFFFF"
-                    }
-                },
-            };
+                minValue: 0
+            },
+            legend: {
+                position: 'top',
+                alignment: 'center',
+                textStyle: {
+                    fontSize: 13,
+                    color: "#FFFFFF"
+                }
+            },
+        };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('bar-chart'));
         chart.draw(data, options);
-    };
+    }
 
-    google.load("visualization", "1", {packages:["corechart"]});
+    google.load("visualization", "1", {packages: ["corechart"]});
     google.setOnLoadCallback(drawChart2);
+
     function drawChart2() {
         var data = google.visualization.arrayToDataTable([
             ['Year', 'Sales', 'Expenses'],
-            ['2013',  1000,      400],
-            ['2014',  1170,      460],
-            ['2015',  660,       1120],
-            ['2016',  1030,      540]
+            ['2013', 1000, 400],
+            ['2014', 1170, 460],
+            ['2015', 660, 1120],
+            ['2016', 1030, 540]
         ]);
 
         var options = {
@@ -130,12 +132,12 @@
 
         var chart = new google.visualization.AreaChart(document.getElementById('area-chart'));
         chart.draw(data, options);
-    };
+    }
 
-    $(window).resize(function(){
+    $(window).resize(function () {
         drawChart1();
         drawChart2();
     });
-    
-    
+
+
 })(jQuery);

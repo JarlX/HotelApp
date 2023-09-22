@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
     "use strict"
 
     //date picker classic default
@@ -66,7 +66,7 @@
 
     //select option
     $('.datepicker-default-date-limits').pickadate({
-        min: new Date(2015,3,20), max: new Date(2015,7,14)
+        min: new Date(2015, 3, 20), max: new Date(2015, 7, 14)
     });
 
     //classic styles

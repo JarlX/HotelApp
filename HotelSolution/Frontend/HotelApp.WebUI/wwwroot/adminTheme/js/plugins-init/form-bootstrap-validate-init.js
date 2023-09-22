@@ -1,25 +1,25 @@
-(function($) {
+(function ($) {
     'use strict';
 
-    $(document).ready(function() {
-        $(".bs-submit").click(function() {
-      
-          //Fetch form to apply custom Bootstrap validation
-          var form = $(".needs-validation")
-      
-          if (form[0].checkValidity() === false) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
+    $(document).ready(function () {
+        $(".bs-submit").click(function () {
 
-          form.addClass('was-validated');
-      
-          //Make ajax call here
-      
+            //Fetch form to apply custom Bootstrap validation
+            var form = $(".needs-validation")
+
+            if (form[0].checkValidity() === false) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+            form.addClass('was-validated');
+
+            //Make ajax call here
+
         })
-      });
+    });
 
-      function isNumberKey(evt){
+    function isNumberKey(evt) {
         var charCode = (evt.which) ? evt.which : event.keyCode
         if (charCode > 31 && (charCode < 48 || charCode > 57))
             return false;
@@ -27,12 +27,10 @@
     }
 
 
-
-
     //to confirm input takes only number input
     //use class ".shouldNumber" in your html <input type="text" /> element
-    $('.shouldNumber').on('keypress', function() {
+    $('.shouldNumber').on('keypress', function () {
         return isNumberKey(event)
     });
 
-  })(jQuery);
+})(jQuery);

@@ -913,7 +913,6 @@
     });
 
 
-
     //Overlay Graph Line 
     var ctx = document.getElementById("overlay-graph-line");
     ctx.height = 100;
@@ -1001,13 +1000,13 @@
                 borderWidth: "0",
                 backgroundColor: "#4c84ff"
             },
-            {
-                label: "My Second dataset",
-                data: [6, 16, 17, 3, 11, 18, 12, 9, 10, 13, 2, 4, 7, 14, 20, 5, 8, 15, 19, 1],
-                borderColor: "#FF4961",
-                borderWidth: "0",
-                backgroundColor: "#FF4961"
-            }
+                {
+                    label: "My Second dataset",
+                    data: [6, 16, 17, 3, 11, 18, 12, 9, 10, 13, 2, 4, 7, 14, 20, 5, 8, 15, 19, 1],
+                    borderColor: "#FF4961",
+                    borderWidth: "0",
+                    backgroundColor: "#FF4961"
+                }
             ]
         },
         options: {
@@ -1043,7 +1042,6 @@
             }
         }
     });
-
 
 
     //Overlay Graph Bar 
@@ -1112,14 +1110,14 @@
                 pointRadius: 0,
                 lineTension: 0,
             },
-            {
-                label: "My First dataset",
-                data: [35, 40, 48, 25, 35, 45, 40],
-                backgroundColor: "rgba(76,132,255,0.12)",
-                borderColor: "#4c84ff",
-                pointRadius: 0,
-                lineTension: 0,
-            }
+                {
+                    label: "My First dataset",
+                    data: [35, 40, 48, 25, 35, 45, 40],
+                    backgroundColor: "rgba(76,132,255,0.12)",
+                    borderColor: "#4c84ff",
+                    pointRadius: 0,
+                    lineTension: 0,
+                }
             ]
         },
         options: {
@@ -1167,9 +1165,7 @@
     });
 
 
-
     // Sales Properties
-
 
 
     var ctx = document.getElementById("sales-properties");
@@ -1219,10 +1215,7 @@
     });
 
 
-
-
     // Rent Properties
-
 
 
     var ctx = document.getElementById("rent-properties");
@@ -1272,7 +1265,6 @@
     });
 
 
-
 })(jQuery);
 
 
@@ -1319,18 +1311,18 @@ myChart = new Chart(nk, {
             pointHoverRadius: 6,
             fill: !1
         },
-        {
-            data: [20, 70, 300, 120, 180, 220, 450, 250],
-            borderWidth: 4,
-            borderColor: "#f7931a",
-            pointBackgroundColor: "#FFF",
-            pointBorderColor: "#f7931a",
-            pointHoverBackgroundColor: "#FFF",
-            pointHoverBorderColor: "#f7931a",
-            pointRadius: 0,
-            pointHoverRadius: 6,
-            fill: !1
-        }
+            {
+                data: [20, 70, 300, 120, 180, 220, 450, 250],
+                borderWidth: 4,
+                borderColor: "#f7931a",
+                pointBackgroundColor: "#FFF",
+                pointBorderColor: "#f7931a",
+                pointHoverBackgroundColor: "#FFF",
+                pointHoverBorderColor: "#f7931a",
+                pointRadius: 0,
+                pointHoverRadius: 6,
+                fill: !1
+            }
         ]
     },
     options: {
@@ -1383,18 +1375,18 @@ myChart = new Chart(nk, {
             pointHoverRadius: 6,
             fill: !1
         },
-        {
-            data: [20, 70, 300, 120, 180, 220, 450, 250],
-            borderWidth: 4,
-            borderColor: "#f7931a",
-            pointBackgroundColor: "#FFF",
-            pointBorderColor: "#f7931a",
-            pointHoverBackgroundColor: "#FFF",
-            pointHoverBorderColor: "#f7931a",
-            pointRadius: 0,
-            pointHoverRadius: 6,
-            fill: !1
-        }
+            {
+                data: [20, 70, 300, 120, 180, 220, 450, 250],
+                borderWidth: 4,
+                borderColor: "#f7931a",
+                pointBackgroundColor: "#FFF",
+                pointBorderColor: "#f7931a",
+                pointHoverBackgroundColor: "#FFF",
+                pointHoverBorderColor: "#f7931a",
+                pointRadius: 0,
+                pointHoverRadius: 6,
+                fill: !1
+            }
         ]
     },
     options: {
@@ -1447,19 +1439,19 @@ myChart = new Chart(nk, {
             pointHoverRadius: 6,
             fill: !0
         },
-        {
-            data: [20, 70, 300, 120, 180, 220, 450, 250],
-            borderWidth: 4,
-            backgroundColor: "rgba(247,147,26,0.1)",
-            borderColor: "rgba(247,147,26,0.9)",
-            pointBackgroundColor: "#FFF",
-            pointBorderColor: "rgba(247,147,26,0.9)",
-            pointHoverBackgroundColor: "#FFF",
-            pointHoverBorderColor: "rgba(247,147,26,0.9)",
-            pointRadius: 0,
-            pointHoverRadius: 6,
-            fill: !0
-        }
+            {
+                data: [20, 70, 300, 120, 180, 220, 450, 250],
+                borderWidth: 4,
+                backgroundColor: "rgba(247,147,26,0.1)",
+                borderColor: "rgba(247,147,26,0.9)",
+                pointBackgroundColor: "#FFF",
+                pointBorderColor: "rgba(247,147,26,0.9)",
+                pointHoverBackgroundColor: "#FFF",
+                pointHoverBorderColor: "rgba(247,147,26,0.9)",
+                pointRadius: 0,
+                pointHoverRadius: 6,
+                fill: !0
+            }
         ]
     },
     options: {
@@ -1513,19 +1505,19 @@ myChart = new Chart(nk, {
             pointHoverRadius: 6,
             fill: !0
         },
-        {
-            data: [20, 70, 300, 120, 180, 220, 450, 250],
-            borderWidth: 4,
-            backgroundColor: "rgba(247,147,26,0.1)",
-            borderColor: "rgba(247,147,26,0.9)",
-            pointBackgroundColor: "#FFF",
-            pointBorderColor: "rgba(247,147,26,0.9)",
-            pointHoverBackgroundColor: "#FFF",
-            pointHoverBorderColor: "rgba(247,147,26,0.9)",
-            pointRadius: 0,
-            pointHoverRadius: 6,
-            fill: !0
-        }
+            {
+                data: [20, 70, 300, 120, 180, 220, 450, 250],
+                borderWidth: 4,
+                backgroundColor: "rgba(247,147,26,0.1)",
+                borderColor: "rgba(247,147,26,0.9)",
+                pointBackgroundColor: "#FFF",
+                pointBorderColor: "rgba(247,147,26,0.9)",
+                pointHoverBackgroundColor: "#FFF",
+                pointHoverBorderColor: "rgba(247,147,26,0.9)",
+                pointRadius: 0,
+                pointHoverRadius: 6,
+                fill: !0
+            }
         ]
     },
     options: {

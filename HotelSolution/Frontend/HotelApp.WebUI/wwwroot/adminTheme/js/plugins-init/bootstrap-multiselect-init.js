@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
     "use strict"
 
     $('.basic-multiselect').multiselect();
@@ -8,21 +8,9 @@
     });
 
     $('.basic-multiselect-selectall').multiselect({
-        enableClickableOptGroups: true, 
+        enableClickableOptGroups: true,
         includeSelectAllOption: true
     });
-    
-    
-
-
-
-
-
-
-
-
-
-
 
 
 })(jQuery);

@@ -38,13 +38,13 @@ var proto = Typeahead.prototype;
 proto.constructor = Typeahead;
 
 // select the current item
-proto.select = function() {
+proto.select = function () {
     var self = this;
     var val = self.menu.find('.active').attr('data-value');
 
     self.element
-      .value(self.updater(val))
-      .emit('change');
+        .value(self.updater(val))
+        .emit('change');
 
     return self.hide();
 }
@@ -70,7 +70,7 @@ proto.show = function () {
         if (tag === 'html' || tag === 'body') {
             continue;
         }
-        
+
         scroll += parent.scrollTop
     }
 
@@ -116,8 +116,7 @@ proto.lookup = function (event) {
 
     if (self.source instanceof Function) {
         self.source(self.query, self.process.bind(self));
-    }
-    else {
+    } else {
         self.process(self.source);
     }
 
@@ -131,14 +130,14 @@ proto.process = function (items) {
     items = self.sorter(items)
 
     if (!items.length) {
-      return self.shown ? self.hide() : self
+        return self.shown ? self.hide() : self
     }
 
     return self.render(items.slice(0, self.options.items)).show()
 }
 
 proto.matcher = function (item) {
-  return ~item.toLowerCase().indexOf(this.query.toLowerCase())
+    return ~item.toLowerCase().indexOf(this.query.toLowerCase())
 }
 
 proto.sorter = function (items) {
@@ -148,9 +147,9 @@ proto.sorter = function (items) {
     var item;
 
     while (item = items.shift()) {
-      if (!item.toLowerCase().indexOf(this.query.toLowerCase())) beginswith.push(item)
-      else if (~item.indexOf(this.query)) caseSensitive.push(item)
-      else caseInsensitive.push(item)
+        if (!item.toLowerCase().indexOf(this.query.toLowerCase())) beginswith.push(item)
+        else if (~item.indexOf(this.query)) caseSensitive.push(item)
+        else caseInsensitive.push(item)
     }
 
     return beginswith.concat(caseSensitive, caseInsensitive)
@@ -169,14 +168,14 @@ proto.render = function (items) {
     items = items.map(function (item) {
         var li = dom(self.options.item);
         li.attr('data-value', item)
-          .find('a').html(self.highlighter(item));
+            .find('a').html(self.highlighter(item));
         return li;
     })
 
     self.options.autoselect && items[0].addClass('active');
 
     self.menu.empty();
-    items.forEach(function(item) {
+    items.forEach(function (item) {
         self.menu.append(item);
     });
 
@@ -209,42 +208,42 @@ proto.listen = function () {
     var self = this;
 
     self.element
-      .on('blur', self.blur.bind(self))
-      .on('keypress', self.keypress.bind(self))
-      .on('keyup', self.keyup.bind(self))
-      .on('keydown', self.keydown.bind(self))
+        .on('blur', self.blur.bind(self))
+        .on('keypress', self.keypress.bind(self))
+        .on('keyup', self.keyup.bind(self))
+        .on('keydown', self.keydown.bind(self))
 
     self.menu
-      .on('click', self.click.bind(self))
-      .on('mouseenter', 'li', self.mouseenter.bind(self))
+        .on('click', self.click.bind(self))
+        .on('mouseenter', 'li', self.mouseenter.bind(self))
 }
 
 proto.move = function (e) {
     if (!this.shown) return
 
-    switch(e.keyCode) {
-    case 9: // tab
-    case 13: // enter
-    case 27: // escape
-        e.preventDefault()
-        break
+    switch (e.keyCode) {
+        case 9: // tab
+        case 13: // enter
+        case 27: // escape
+            e.preventDefault()
+            break
 
-    case 38: // up arrow
-        e.preventDefault()
-        this.prev()
-        break
+        case 38: // up arrow
+            e.preventDefault()
+            this.prev()
+            break
 
-    case 40: // down arrow
-        e.preventDefault()
-        this.next()
-        break
+        case 40: // down arrow
+            e.preventDefault()
+            this.next()
+            break
     }
 
     e.stopPropagation()
 }
 
 proto.keydown = function (e) {
-    this.suppressKeyPressRepeat = [40,38,9,13,27].indexOf(e.keyCode) >= 0
+    this.suppressKeyPressRepeat = [40, 38, 9, 13, 27].indexOf(e.keyCode) >= 0
     this.move(e)
 }
 
@@ -256,24 +255,24 @@ proto.keypress = function (e) {
 proto.keyup = function (e) {
     var self = this;
 
-    switch(e.keyCode) {
-    case 40: // down arrow
-    case 38: // up arrow
+    switch (e.keyCode) {
+        case 40: // down arrow
+        case 38: // up arrow
             break
 
-    case 9: // tab
-    case 13: // enter
-        if (!self.shown) return
-        self.select()
-        break
+        case 9: // tab
+        case 13: // enter
+            if (!self.shown) return
+            self.select()
+            break
 
-    case 27: // escape
-        if (!self.shown) return
-        self.hide()
-        break
+        case 27: // escape
+            if (!self.shown) return
+            self.hide()
+            break
 
-    default:
-        self.lookup()
+        default:
+            self.lookup()
     }
 
     e.stopPropagation()
@@ -282,7 +281,9 @@ proto.keyup = function (e) {
 
 proto.blur = function (e) {
     var self = this;
-    setTimeout(function () { self.hide() }, 150);
+    setTimeout(function () {
+        self.hide()
+    }, 150);
 }
 
 proto.click = function (e) {

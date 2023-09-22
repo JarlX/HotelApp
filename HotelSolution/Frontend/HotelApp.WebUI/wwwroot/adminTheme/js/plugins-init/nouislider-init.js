@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
     "use strict"
 
     // //basic slider
@@ -12,7 +12,7 @@
         }
     });
     // //basic slider ^
-    
+
 
     // //stepping and snapping the values
     var stepSlider = document.getElementById('slider-step');
@@ -44,7 +44,7 @@
     });
 
     var marginMin = document.getElementById('slider-margin-value-min'),
-    marginMax = document.getElementById('slider-margin-value-max');
+        marginMax = document.getElementById('slider-margin-value-max');
     marginSlider.noUiSlider.on('update', function (values, handle) {
         if (handle) {
             marginMax.innerHTML = values[handle];

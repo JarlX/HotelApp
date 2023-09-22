@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(e) {
+document.addEventListener("DOMContentLoaded", function (e) {
     var t, n, a, i, o, m, l, d, t = new JustGage({
             id: "g1",
             value: getRandomInt(0, 100),
@@ -97,9 +97,9 @@ document.addEventListener("DOMContentLoaded", function(e) {
             }],
             counter: !0
         })
-    document.getElementById("g8_refresh").addEventListener("click", function() {
+    document.getElementById("g8_refresh").addEventListener("click", function () {
         d.refresh(getRandomInt(0, 100))
-    }), setInterval(function() {
+    }), setInterval(function () {
         t.refresh(getRandomInt(0, 100)), n.refresh(getRandomInt(0, 100)), a.refresh(getRandomInt(0, 100)), i.refresh(getRandomInt(0, 100)), o.refresh(getRandomInt(0, 100)), m.refresh(getRandomInt(0, 100)), l.refresh(getRandomInt(0, 100))
     }, 2500)
 })

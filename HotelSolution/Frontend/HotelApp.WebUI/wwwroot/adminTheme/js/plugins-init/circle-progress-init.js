@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
     "use strict";
 
     $('#first-circle').circleProgress({
@@ -17,7 +17,7 @@
         fill: {
             gradient: ["#00A2FF", "#0000FF"]
         },
-        animation: { duration: 1200, easing: "circleProgressEasing" }
+        animation: {duration: 1200, easing: "circleProgressEasing"}
     });
 
     $('#third-circle').circleProgress({
@@ -33,12 +33,11 @@
     });
 
 
-
     $('#fourth-circle').circleProgress({
         startAngle: -Math.PI / 4 * 3,
         value: 0.5,
         size: 150,
-        fill: { color: '#0000FF' },
+        fill: {color: '#0000FF'},
         thickness: 5
     });
 
@@ -47,7 +46,7 @@
         value: 0.5,
         size: 150,
         lineCap: 'round',
-        fill: { color: '#0000FF' },
+        fill: {color: '#0000FF'},
         reverse: false
     });
 
@@ -56,7 +55,7 @@
         value: 0.5,
         size: 150,
         lineCap: 'round',
-        fill: { color: '#0000FF' },
+        fill: {color: '#0000FF'},
         reverse: true
     });
     $('#seventh-circle').circleProgress({
@@ -64,7 +63,7 @@
         value: 0.5,
         size: 150,
         lineCap: 'round',
-        fill: { color: '#0000FF' },
+        fill: {color: '#0000FF'},
         reverse: true,
         emptyFill: "rgba(0, 0, 255, .2)"
     });
