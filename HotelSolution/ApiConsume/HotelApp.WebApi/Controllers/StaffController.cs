@@ -38,6 +38,9 @@ namespace HotelApp.WebApi.Controllers
         [HttpPost]
         public IActionResult AddStaff(Staff staff)
         {
+            var firstName = staff.FirstName;
+            var lastName = staff.LastName;
+            staff.FullName = $"{firstName} {lastName}";
             _staffService.TInsert(staff);
             return Ok();
         }
@@ -49,7 +52,7 @@ namespace HotelApp.WebApi.Controllers
             return Ok();
         }
 
-        [HttpDelete]
+        [HttpDelete("{id:int}")]
         public IActionResult DeleteStaff(int id)
         {
             var staff = _staffService.TGetById(id);

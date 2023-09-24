@@ -22,10 +22,10 @@
             <td>@item.FullName</td>
             <td>@item.StaffTitle</td>
             <td>
-                <button href="#" class="btn mb-1 btn-rounded btn-outline-danger">Sil</button>
+                <a class="btn mb-1 btn-rounded btn-outline-danger" href="/Staff/DeleteStaff/@item.StaffID">Sil</a>
             </td>
             <td>
-                <button href="#" class="btn mb-1 btn-rounded btn-outline-success">Güncelle</button>
+                <a class="btn mb-1 btn-rounded btn-outline-success" href="/Staff/UpdateStaff/@item.StaffID">Güncelle</a>
             </td>
             <td>
                 <button href="#" class="btn mb-1 btn-rounded btn-outline-dark">Detaylar</button>
@@ -33,4 +33,4 @@
         </tr>
     }
 </table>
-<a href="#" class="btn mb-1 btn-rounded btn-info">Yeni Personel</a>
+<a href="/Staff/AddStaff/" class="btn mb-1 btn-rounded btn-info">Yeni Personel</a>
