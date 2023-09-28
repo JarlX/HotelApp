@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "EXKf3/J5eYZ0dkxI0foewoAUxoI2bMSL4TbvK42a15qr+Zb0BqIAvQlc3e98hOhlart8bxsugpOjpoMMKsBmWw==",
+  "dgSpecHash": "nZep80Uxx+y3BcTpuJl0ldB9AmmkCiS1ZQUolJ0PPBPCm3sge36hOG4QLZ/eZqRaalTavF81ilZ8wXIcxP2HYg==",
   "success": true,
   "projectFilePath": "/Users/salihcancakar/Desktop/HotelApp/HotelSolution/ApiConsume/HotelApp.WebApi/HotelApp.WebApi.csproj",
   "expectedPackageFiles": [
+    "/Users/salihcancakar/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/Users/salihcancakar/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/Users/salihcancakar/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/salihcancakar/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
     "/Users/salihcancakar/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
@@ -72,7 +74,7 @@
     "/Users/salihcancakar/.nuget/packages/microsoft.codeanalysis.razor/6.0.11/microsoft.codeanalysis.razor.6.0.11.nupkg.sha512",
     "/Users/salihcancakar/.nuget/packages/microsoft.codeanalysis.scripting.common/4.4.0/microsoft.codeanalysis.scripting.common.4.4.0.nupkg.sha512",
     "/Users/salihcancakar/.nuget/packages/microsoft.codeanalysis.workspaces.common/4.4.0/microsoft.codeanalysis.workspaces.common.4.4.0.nupkg.sha512",
-    "/Users/salihcancakar/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/salihcancakar/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/salihcancakar/.nuget/packages/microsoft.data.sqlclient/5.1.1/microsoft.data.sqlclient.5.1.1.nupkg.sha512",
     "/Users/salihcancakar/.nuget/packages/microsoft.data.sqlclient.sni.runtime/5.1.0/microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512",
     "/Users/salihcancakar/.nuget/packages/microsoft.diasymreader/1.4.0/microsoft.diasymreader.1.4.0.nupkg.sha512",

@@ -23,4 +23,15 @@
       <ProjectReference Include="..\HotelApp.EntityLayer\HotelApp.EntityLayer.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Dtos\ServiceDTO\" />
+      <Folder Include="Dtos\SubscribeDTO\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="System.ComponentModel.Annotations">
+        <HintPath>..\..\..\..\..\..\..\usr\local\share\dotnet\shared\Microsoft.NETCore.App\7.0.9\System.ComponentModel.Annotations.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
 </Project>

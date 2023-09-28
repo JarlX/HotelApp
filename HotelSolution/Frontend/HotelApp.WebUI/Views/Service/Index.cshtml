@@ -1,0 +1,38 @@
+@model List<ResultServiceDTO>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Hizmet Görseli</th>
+        <th>Hizmet Adı</th>
+        <th>Hizmet Açıklaması</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+        <th>Detaylar</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        
+        <tr>
+            <td>@item.ServiceID</td>
+            <td>@item.ServiceIcon</td>
+            <td>@item.Title</td>
+            <td>@item.Description</td>
+            <td>
+                <a class="btn mb-1 btn-rounded btn-outline-danger" href="/Service/DeleteService/@item.ServiceID">Sil</a>
+            </td>
+            <td>
+                <a class="btn mb-1 btn-rounded btn-outline-success" href="/Service/UpdateService/@item.ServiceID">Güncelle</a>
+            </td>
+            <td>
+                <button href="#" class="btn mb-1 btn-rounded btn-outline-dark">Detaylar</button>
+            </td>
+        </tr>
+    }
+</table>
+<a href="/Staff/AddStaff/" class="btn mb-1 btn-rounded btn-info">Yeni Personel</a>

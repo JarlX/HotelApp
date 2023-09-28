@@ -15,12 +15,18 @@
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="12.0.1" />
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
         <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.10" />
     </ItemGroup>
 
     <ItemGroup>
         <_ContentIncludedByDefault Remove="Views\AdminLayout\HeadPartial.cshtml" />
         <_ContentIncludedByDefault Remove="Views\AdminLayout\_AdminLayout.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\ApiConsume\HotelApp.EntityLayer\HotelApp.EntityLayer.csproj" />
     </ItemGroup>
 
 </Project>
