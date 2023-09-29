@@ -13,7 +13,6 @@
         <th>Hizmet Açıklaması</th>
         <th>Sil</th>
         <th>Güncelle</th>
-        <th>Detaylar</th>
     </tr>
     @foreach (var item in Model)
     {
@@ -29,10 +28,7 @@
             <td>
                 <a class="btn mb-1 btn-rounded btn-outline-success" href="/Service/UpdateService/@item.ServiceID">Güncelle</a>
             </td>
-            <td>
-                <button href="#" class="btn mb-1 btn-rounded btn-outline-dark">Detaylar</button>
-            </td>
         </tr>
     }
 </table>
-<a href="/Staff/AddStaff/" class="btn mb-1 btn-rounded btn-info">Yeni Personel</a>
+<a href="/Service/AddService/" class="btn mb-1 btn-rounded btn-info">Yeni Hizmet</a>
