@@ -249,3 +249,11 @@
 /Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
 /Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.EntityLayer.dll
 /Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.EntityLayer.pdb
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.DataAccessLayer.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.DataAccessLayer.pdb
