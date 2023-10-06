@@ -1,6 +1,7 @@
 namespace HotelApp.WebUI.Mapping;
 
 using AutoMapper;
+using DTO.LoginDTO;
 using DTO.RegisterDTO;
 using DTO.ServiceDTO;
 using EntityLayer.Concrete;
@@ -14,6 +15,7 @@ public class AutoMapperConfig : Profile
         CreateMap<ResultServiceDTO, Service>().ReverseMap();
 
         CreateMap<CreateNewUserDTO, AppUser>().ReverseMap();
+        CreateMap<LoginUserDTO, AppUser>().ReverseMap();
 
     }
 }
