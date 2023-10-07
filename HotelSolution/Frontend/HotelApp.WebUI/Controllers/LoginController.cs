@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HotelApp.WebUI.Controllers
 {
+    using DTO.LoginDTO;
     using EntityLayer.Concrete;
     using Microsoft.AspNetCore.Identity;
 
@@ -26,8 +27,21 @@ namespace HotelApp.WebUI.Controllers
         }
         
         [HttpPost]
-        public IActionResult Index()
+        public async Task<IActionResult> Index(LoginUserDTO loginUserDto)
         {
+            if (ModelState.IsValid)
+            {
+                var result =
+                    await _signInManager.PasswordSignInAsync(loginUserDto.Username, loginUserDto.Password, false,
+                        false);
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Index", "Staff");
+                }
+
+                return View();
+            }
             return View();
         }
     }

@@ -17,7 +17,15 @@
   <component name="ChangeListManager">
     <list default="true" id="ab40fe3e-8980-4642-8b0a-c22027b1d73b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HotelSolution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HotelSolution/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/RegisterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/RegisterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DTOLayer/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DTOLayer/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/LoginController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/LoginController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/LoginDTO/LoginUserDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/LoginDTO/LoginUserDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/HotelApp.WebUI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/HotelApp.WebUI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +164,8 @@
       <workItem from="1694875979215" duration="8521000" />
       <workItem from="1694906820930" duration="6255000" />
       <workItem from="1695306802024" duration="48300000" />
-      <workItem from="1695923650353" duration="23347000" />
+      <workItem from="1695923650353" duration="26395000" />
+      <workItem from="1696711499806" duration="486000" />
     </task>
     <servers />
   </component>
