@@ -10,6 +10,7 @@
     <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
     <ItemGroup>
         <Folder Include="Controllers\" />
+        <Folder Include="ViewComponents\Default\" />
         <Folder Include="Views\Home\" />
         <Folder Include="Views\Shared\" />
     </ItemGroup>
