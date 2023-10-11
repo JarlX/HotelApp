@@ -1,25 +1,18 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HotelApp.WebUI.Controllers
 {
     using System.Text;
-    using AutoMapper;
     using DTO.ServiceDTO;
     using Newtonsoft.Json;
 
     public class ServiceController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;
-        private readonly IMapper _mapper;
 
-        public ServiceController(IHttpClientFactory httpClientFactory, IMapper mapper)
+        public ServiceController(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
-            _mapper = mapper;
         }
 
         public async Task<IActionResult> Index()
