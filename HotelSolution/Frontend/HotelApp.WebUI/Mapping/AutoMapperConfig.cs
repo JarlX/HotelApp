@@ -18,8 +18,8 @@ public class AutoMapperConfig : Profile
         CreateMap<CreateNewUserDTO, AppUser>().ReverseMap();
         CreateMap<LoginUserDTO, AppUser>().ReverseMap();
 
-        CreateMap<ResultAboutDTO, About>().ReverseMap();
-        CreateMap<UpdateAboutDTO, About>().ReverseMap();
+        CreateMap<AboutResultDTO, About>().ReverseMap();
+        CreateMap<AboutUpdateDTO, About>().ReverseMap();
 
     }
 }

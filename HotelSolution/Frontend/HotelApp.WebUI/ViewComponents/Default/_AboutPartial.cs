@@ -20,7 +20,7 @@ public class _AboutPartial : ViewComponent
         if (response.IsSuccessStatusCode)
         {
             var jsonData = await response.Content.ReadAsStringAsync();
-            var values = JsonConvert.DeserializeObject<List<ResultAboutDTO>>(jsonData);
+            var values = JsonConvert.DeserializeObject<List<AboutResultDTO>>(jsonData);
             return View(values);
         }
         return View();

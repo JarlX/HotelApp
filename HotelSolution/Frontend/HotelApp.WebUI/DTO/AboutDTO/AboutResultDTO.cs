@@ -1,6 +1,6 @@
 namespace HotelApp.WebUI.DTO.AboutDTO;
 
-public class ResultAboutDTO
+public class AboutResultDTO
 {
     public int AboutID { get; set; }
 
