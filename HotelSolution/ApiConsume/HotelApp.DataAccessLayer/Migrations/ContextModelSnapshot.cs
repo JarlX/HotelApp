@@ -266,6 +266,10 @@ namespace HotelApp.DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("StaffImage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("StaffTitle")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

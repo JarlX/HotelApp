@@ -12,7 +12,7 @@ build_property.RootNamespace = HotelApp.WebUI
 build_property.ProjectDir = /Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = /Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI
 build_property._RazorSourceGeneratorDebug = 
 

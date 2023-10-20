@@ -9,6 +9,8 @@ public class Staff
 
     public int StaffID { get; set; }
 
+    public string StaffImage { get; set; }
+
     public string StaffTitle { get; set; }
 
     public string FirstName { get; set; }
