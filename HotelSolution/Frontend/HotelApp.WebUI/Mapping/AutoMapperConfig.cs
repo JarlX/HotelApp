@@ -3,8 +3,11 @@ namespace HotelApp.WebUI.Mapping;
 using AutoMapper;
 using DTO.AboutDTO;
 using DTO.LoginDTO;
+using DTO.NewsletterDTO;
 using DTO.RegisterDTO;
 using DTO.ServiceDTO;
+using DTO.StaffDTO;
+using DTO.TestimonialDTO;
 using EntityLayer.Concrete;
 
 public class AutoMapperConfig : Profile
@@ -20,6 +23,12 @@ public class AutoMapperConfig : Profile
 
         CreateMap<AboutResultDTO, About>().ReverseMap();
         CreateMap<AboutUpdateDTO, About>().ReverseMap();
+
+        CreateMap<ResultTestimonialDTO, Testimonial>().ReverseMap();
+        
+        CreateMap<ResultStaffDTO, Staff>().ReverseMap();
+        
+        CreateMap<CreateNewsletterDTO,Subscribe>().ReverseMap();
 
     }
 }
