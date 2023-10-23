@@ -1,0 +1,44 @@
+@model List<ResultBookingDTO>
+
+@{
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+
+}
+
+<h2>Rezervasyonlar</h2>
+<div class="col-lg-12">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th></th>
+                <th>Rezervason Adı</th>
+                <th>Yetişkin Sayısı</th>
+                <th>Çocuk Sayısı</th>
+                <th>Check In-Out</th>
+                <th>Durum Bilgisi</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th>@Model.Count</th>
+                    <td>@item.Name</td>
+                    <td><span class="badge badge-primary px-2">@item.AdultCount</span>
+                    </td>
+                    <td>@item.ChildCount</td>
+                    <td>@item.CheckIn.Date.ToString("dd.MM.yyyy") - @item.CheckOut.Date.ToString("dd.MM.yyyy")</td>
+                    <td class="color-primary">@item.Status</td>
+                    <td><button class="btn mb-1 btn-rounded btn-outline-info">Detaylar</button></td>
+                    <td><button class="btn mb-1 btn-rounded btn-outline-success">Onayla</button></td>
+                    <td><button class="btn mb-1 btn-rounded btn-outline-danger">Red Et</button></td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

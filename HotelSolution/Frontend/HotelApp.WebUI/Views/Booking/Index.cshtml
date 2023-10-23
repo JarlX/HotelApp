@@ -27,11 +27,11 @@
 <!-- Booking End -->
 
 <!-- Booking Main Start -->
-@await Component.InvokeAsync("_BookingMainPartial")
+@await Html.PartialAsync("AddBooking")   
 <!-- Booking Main End -->
 
 <!-- Newsletter Start -->
-@* @await Html.PartialAsync("_NewsletterPartial.cshtml") *@
+@await Html.PartialAsync("/Views/Default/_NewsletterPartial.cshtml")
 <!-- Newsletter Start -->
 
 <!-- Footer Start -->

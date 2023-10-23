@@ -2,6 +2,7 @@ namespace HotelApp.WebUI.Mapping;
 
 using AutoMapper;
 using DTO.AboutDTO;
+using DTO.BookingDTO;
 using DTO.LoginDTO;
 using DTO.NewsletterDTO;
 using DTO.RegisterDTO;
@@ -30,5 +31,6 @@ public class AutoMapperConfig : Profile
         
         CreateMap<CreateNewsletterDTO,Subscribe>().ReverseMap();
 
+        CreateMap<CreateBookingDTO, Booking>().ReverseMap();
     }
 }
