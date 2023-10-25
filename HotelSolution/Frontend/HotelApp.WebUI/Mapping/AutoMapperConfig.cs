@@ -32,5 +32,6 @@ public class AutoMapperConfig : Profile
         CreateMap<CreateNewsletterDTO,Subscribe>().ReverseMap();
 
         CreateMap<CreateBookingDTO, Booking>().ReverseMap();
+        CreateMap<ApproveBookingDTO, Booking>().ReverseMap();
     }
 }

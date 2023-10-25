@@ -10,40 +10,552 @@
     <projectFile profileName="https">HotelApp.WebAPI/HotelApp.WebAPI.csproj</projectFile>
     <projectFile profileName="http">HotelApp.WebUI/HotelApp.WebUI.csproj</projectFile>
     <projectFile profileName="https">HotelApp.WebUI/HotelApp.WebUI.csproj</projectFile>
+    <projectFile profileName="http">RapidAPI/RapidAPI.csproj</projectFile>
+    <projectFile profileName="https">RapidAPI/RapidAPI.csproj</projectFile>
+    <projectFile profileName="http">WebApplication1/WebApplication1.csproj</projectFile>
+    <projectFile profileName="https">WebApplication1/WebApplication1.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab40fe3e-8980-4642-8b0a-c22027b1d73b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/AdminBookingController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/BookingDTO/CreateBookingDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/BookingDTO/ResultBookingDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminBooking/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Booking/AddBooking.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/BookingDTO/ApproveBookingDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/Controllers/ExchangeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/Controllers/HomeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/Controllers/IMDBController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/Models/ErrorViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/Models/ExchangeViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/RapidAPI.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/Views/Exchange/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/Views/Home/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/Views/Home/Privacy.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/Views/IMDB/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/Views/Shared/Error.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/Views/Shared/_Layout.cshtml.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/Views/_ViewImports.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/Views/_ViewStart.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Humanizer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.AspNetCore.Razor.Language.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.Build.Framework.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.Build.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.Features.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.CodeAnalysis.Elfie.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.CodeAnalysis.Features.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.CodeAnalysis.Razor.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.CodeAnalysis.Scripting.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.CodeAnalysis.Workspaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.CodeAnalysis.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.DiaSymReader.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.DotNet.Scaffolding.Shared.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.NET.StringTools.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/Newtonsoft.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/NuGet.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/NuGet.Configuration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/NuGet.DependencyResolver.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/NuGet.Frameworks.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/NuGet.LibraryModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/NuGet.Packaging.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/NuGet.ProjectModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/NuGet.Protocol.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/NuGet.Versioning.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/RapidAPI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/RapidAPI.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/RapidAPI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/RapidAPI.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/RapidAPI.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/RapidAPI.staticwebassets.runtime.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/System.Composition.AttributedModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/System.Composition.Convention.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/System.Composition.Hosting.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/System.Composition.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/System.Composition.TypedParts.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/System.Configuration.ConfigurationManager.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/System.Drawing.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/System.Reflection.MetadataLoadContext.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/System.Security.Permissions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/System.Windows.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/af/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ar/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/az/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/bg/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/bn-BD/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/cs/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/da/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/de/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/dotnet-aspnet-codegenerator-design.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/el/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/es/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/fa/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/fi-FI/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/fr-BE/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/fr/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/he/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/hr/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/hu/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/hy/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/id/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/is/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/it/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ja/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ko-KR/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ku/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/lv/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ms-MY/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/mt/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/nb-NO/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/nb/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/nl/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/pl/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/pt/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ro/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ru/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/sk/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/sl/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/sr-Latn/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/sr/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/sv/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/th-TH/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/tr/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/uk/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/uz-Cyrl-UZ/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/uz-Latn-UZ/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/vi/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/zh-CN/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/zh-Hans/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/zh-Hant/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/.nupkg.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator.7.0.10.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator.7.0.10.nupkg.sha512" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator.nuspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/DotnetToolSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/Humanizer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/Microsoft.CodeAnalysis.AnalyzerUtilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/Microsoft.CodeAnalysis.CSharp.Features.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/Microsoft.CodeAnalysis.CSharp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/Microsoft.CodeAnalysis.Elfie.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/Microsoft.CodeAnalysis.Features.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/Microsoft.CodeAnalysis.Scripting.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/Microsoft.CodeAnalysis.Workspaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/Microsoft.CodeAnalysis.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/Microsoft.DiaSymReader.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/Microsoft.DotNet.Scaffolding.Shared.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/Microsoft.DotNet.Scaffolding.Shared.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/Microsoft.DotNet.Scaffolding.Shared.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/Newtonsoft.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/NuGet.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/NuGet.Configuration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/NuGet.DependencyResolver.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/NuGet.Frameworks.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/NuGet.LibraryModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/NuGet.Packaging.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/NuGet.ProjectModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/NuGet.Protocol.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/NuGet.Versioning.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/System.Composition.AttributedModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/System.Composition.Convention.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/System.Composition.Hosting.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/System.Composition.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/System.Composition.TypedParts.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/System.Configuration.ConfigurationManager.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/System.IO.Pipelines.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/System.Security.Cryptography.Pkcs.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/System.Security.Permissions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/af/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ar/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/az/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/bg/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/bn-BD/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/build/microsoft.visualstudio.web.codegeneration.tools.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/buildMultiTargeting/microsoft.visualstudio.web.codegeneration.tools.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/cs/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/cs/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/cs/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/cs/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/da/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/de/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/de/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/de/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/de/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/de/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/dotnet-aspnet-codegenerator.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/dotnet-aspnet-codegenerator.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/dotnet-aspnet-codegenerator.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/dotnet-aspnet-codegenerator.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/dotnet-aspnet-codegenerator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/el/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/es/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/es/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/es/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/es/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/es/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/fa/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/fi-FI/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/fr-BE/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/fr/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/fr/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/fr/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/fr/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/he/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/hr/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/hu/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/hy/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/id/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/is/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/it/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/it/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/it/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/it/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/it/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ja/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ja/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ja/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ja/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ko-KR/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ko/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ko/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ko/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ku/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/lv/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ms-MY/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/mt/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/nb-NO/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/nb/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/nl/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/pl/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/pl/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/pl/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/pl/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/pt-BR/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/pt/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ro/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ru/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ru/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ru/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/ru/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/runtimes/win/lib/netcoreapp3.0/System.Security.Cryptography.Pkcs.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/shims/win-x64/dotnet-aspnet-codegenerator.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/shims/win-x86/dotnet-aspnet-codegenerator.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/sk/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/sl/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/sr-Latn/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/sr/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/sv/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/th-TH/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/toolassets/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Msbuild.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/tr/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/tr/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/tr/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/tr/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/uk/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/uz-Cyrl-UZ/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/uz-Latn-UZ/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/vi/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/zh-CN/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/zh-Hans/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/zh-Hans/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/zh-Hant/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/dotnet-aspnet-codegenerator/7.0.10/tools/net7.0/any/zh-Hant/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/.store/dotnet-aspnet-codegenerator/7.0.10/restore.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/RapidAPI.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/RapidAPI.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/RapidAPI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/RapidAPI.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/RapidAPI.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/RapidAPI.RazorAssemblyInfo.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/RapidAPI.RazorAssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/RapidAPI.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/RapidAPI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/RapidAPI.csproj.CopyComplete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/RapidAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/RapidAPI.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/RapidAPI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/RapidAPI.genruntimeconfig.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/RapidAPI.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/apphost" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/ref/RapidAPI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/refint/RapidAPI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/scopedcss/bundle/RapidAPI.styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/scopedcss/projectbundle/RapidAPI.bundle.scp.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/staticwebassets.build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/staticwebassets.development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/staticwebassets.pack.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/staticwebassets/msbuild.RapidAPI.Microsoft.AspNetCore.StaticWebAssets.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/staticwebassets/msbuild.build.RapidAPI.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.RapidAPI.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.RapidAPI.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/RapidAPI.csproj.codegeneration.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/RapidAPI.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/RapidAPI.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/RapidAPI.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/dotnet-aspnet-codegenerator" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/css/site.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/js/site.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/jquery-validation/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/jquery/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/jquery/dist/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RapidAPI/wwwroot/lib/jquery/dist/jquery.min.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HotelSolution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HotelSolution/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DTOLayer/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DTOLayer/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/BookingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/BookingController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DTOLayer/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DTOLayer/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/AdminBookingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/AdminBookingController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/BookingDTO/CreateBookingDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/BookingDTO/CreateBookingDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/BookingDTO/ResultBookingDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/BookingDTO/ResultBookingDTO.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Mapping/AutoMapperConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Mapping/AutoMapperConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/ViewComponents/Booking/_BookingMainPartial.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminLayout/SidebarPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminLayout/SidebarPartial.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Booking/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Booking/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Default/_NewsletterPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Default/_NewsletterPartial.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Shared/Components/_BookingMainPartial/Default.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Shared/Components/_BookingMainPartial/Default.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/_ViewImports.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminBooking/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminBooking/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Booking/AddBooking.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Booking/AddBooking.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Shared/Components/_BackAndLibPartial/Default.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Shared/Components/_BackAndLibPartial/Default.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.WebUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.WebUI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.WebUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.WebUI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/HotelApp.WebUI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/HotelApp.WebUI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/HotelApp.WebUI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/HotelApp.WebUI.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/HotelApp.WebUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/HotelApp.WebUI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/HotelApp.WebUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/HotelApp.WebUI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/ref/HotelApp.WebUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/ref/HotelApp.WebUI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/refint/HotelApp.WebUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/refint/HotelApp.WebUI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelSolution.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HotelSolution.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +615,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.HotelApp.WebUI: http">
+  <component name="RunManager" selected=".NET Launch Settings Profile.RapidAPI: http">
     <configuration name="HotelApp.WebApi: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/HotelApp.WebApi.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -164,7 +676,39 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="RapidAPI: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/RapidAPI/RapidAPI.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="RapidAPI: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/RapidAPI/RapidAPI.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="https" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue=".NET Launch Settings Profile.RapidAPI: http" />
+      <item itemvalue=".NET Launch Settings Profile.RapidAPI: https" />
       <item itemvalue=".NET Launch Settings Profile.HotelApp.WebApi: http" />
       <item itemvalue=".NET Launch Settings Profile.HotelApp.WebApi: https" />
       <item itemvalue=".NET Launch Settings Profile.HotelApp.WebUI: http" />
@@ -194,7 +738,7 @@
       <workItem from="1697408221373" duration="634000" />
       <workItem from="1697409052827" duration="18160000" />
       <workItem from="1697764741777" duration="33019000" />
-      <workItem from="1698082483817" duration="3776000" />
+      <workItem from="1698082483817" duration="12152000" />
     </task>
     <servers />
   </component>

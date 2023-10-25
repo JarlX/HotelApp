@@ -2,6 +2,7 @@ namespace HotelApp.WebUI.DTO.BookingDTO;
 
 public class CreateBookingDTO
 {
+
     public string Name { get; set; }
 
     public string Mail { get; set; }

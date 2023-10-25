@@ -2,6 +2,8 @@ namespace HotelApp.WebUI.DTO.BookingDTO;
 
 public class ResultBookingDTO
 {
+    public int BookingID { get; set; }
+
     public string Name { get; set; }
 
     public string Mail { get; set; }

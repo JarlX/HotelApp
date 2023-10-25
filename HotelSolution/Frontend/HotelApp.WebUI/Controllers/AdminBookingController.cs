@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HotelApp.WebUI.Controllers
 {
+    using System.Text;
     using DTO.BookingDTO;
     using Newtonsoft.Json;
 
@@ -31,6 +32,19 @@ namespace HotelApp.WebUI.Controllers
                 return View(values);
             }
             return View();
+        }
+
+        public async Task<IActionResult> ApproveReservation(ApproveBookingDTO approveBookingDto)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var jsonData = JsonConvert.SerializeObject(approveBookingDto);
+            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            var request = await client.PostAsync("http://localhost:5292/api/Update", stringContent);
+            if (request.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index");
+            }
+            return RedirectToAction("Index");
         }
     }
 }

@@ -26,12 +26,11 @@
                 <tr>
                     <th>@Model.Count</th>
                     <td>@item.Name</td>
-                    <td><span class="badge badge-primary px-2">@item.AdultCount</span>
-                    </td>
+                    <td>@item.AdultCount</td>
                     <td>@item.ChildCount</td>
-                    <td>@item.CheckIn.Date.ToString("dd.MM.yyyy") - @item.CheckOut.Date.ToString("dd.MM.yyyy")</td>
-                    <td class="color-primary">@item.Status</td>
-                    <td><button class="btn mb-1 btn-rounded btn-outline-info">Detaylar</button></td>
+                    <td>@item.CheckIn.Date.ToString("dd.MMM.yyyy") - @item.CheckOut.Date.ToString("dd.MMM.yyyy")</td>
+                    <td><span class="badge badge-primary px-2">@item.Status</span></td>
+                    <td><button class="btn mb-1 btn-rounded btn-outline-info"><a href="AdminBooking/Index/@item.BookingID">Detaylar</a></button></td>
                     <td><button class="btn mb-1 btn-rounded btn-outline-success">Onayla</button></td>
                     <td><button class="btn mb-1 btn-rounded btn-outline-danger">Red Et</button></td>
                 </tr>
