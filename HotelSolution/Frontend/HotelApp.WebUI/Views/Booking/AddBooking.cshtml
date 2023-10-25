@@ -40,14 +40,14 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-floating date" id="date99" data-target-input="nearest">
-                                    <input type="text" class="form-control datetimepicker-input" id="checkin" placeholder="Check In" data-target="#date99" data-toggle="datetimepicker" value="@DateTime.Now" asp-format="{0:yyyy-MM-ddTHH:mm}" asp-for="CheckIn" />
+                                <div class="form-floating date" id="date3" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input" id="checkin" placeholder="Check In" data-target="#date3" data-toggle="datetimepicker" asp-for="CheckIn" />
                                     <label for="checkin">Giriş Tarihiniz</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-floating date" id="date98" data-target-input="nearest">
-                                    <input type="text" class="form-control datetimepicker-input" id="checkout" placeholder="Check Out" data-target="#date98" data-toggle="datetimepicker"  asp-for="CheckOut" />
+                                <div class="form-floating date" id="date4" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input" id="checkout" placeholder="Check Out" data-target="#date4" data-toggle="datetimepicker"  asp-for="CheckOut" />
                                     <label for="checkout">Çıkış Tarihiniz</label>
                                 </div>
                             </div>
@@ -90,27 +90,10 @@
 </div>
 
 <script>
-
-        $('#date99').datetimepicker({
-
-            format: 'DD.MM.YYYY HH:mm',
-
-            locale: 'tr',
-
-            timeZone: 'Europe/Istanbul'
-
+    $(function () {
+        $('#date1, #date2,#date3, #date4').datetimepicker({
+            format: 'DD-MM-YYYY', // Tarih ve saat biçimi
+            minDate: new Date() // Minimum tarih
         });
-
-
-
-        $('#date98').datetimepicker({
-
-            format: 'DD.MM.YYYY HH:mm',
-
-            locale: 'tr',
-
-            timeZone: 'Europe/Istanbul'
-
-        });
-
-    </script>
+    });
+</script>
