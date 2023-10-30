@@ -20,12 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab40fe3e-8980-4642-8b0a-c22027b1d73b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/Abstract/IContactService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/Concrete/ContactManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/Abstract/IContactDal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/EntityFramework/EfContactDal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/Concrete/Contact.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/Concrete/Context.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/Concrete/Context.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/Controllers/ContactController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HotelSolution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HotelSolution/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.BusinessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.BusinessLayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.BusinessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.BusinessLayer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.DataAccessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.DataAccessLayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.DataAccessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.DataAccessLayer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/Debug/net7.0/HotelApp.BusinessLayer.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/Debug/net7.0/HotelApp.BusinessLayer.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/Debug/net7.0/HotelApp.BusinessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/Debug/net7.0/HotelApp.BusinessLayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/Debug/net7.0/HotelApp.BusinessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/Debug/net7.0/HotelApp.BusinessLayer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.BusinessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.BusinessLayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.BusinessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.BusinessLayer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.DataAccessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.DataAccessLayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.DataAccessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.DataAccessLayer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.WebApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.WebApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/HotelApp.WebApi.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/HotelApp.WebApi.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/HotelApp.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/HotelApp.WebApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/HotelApp.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/HotelApp.WebApi.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +61,7 @@
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -90,7 +102,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.HotelApp.WebUI: http">
+  <component name="RunManager" selected=".NET Launch Settings Profile.HotelApp.WebApi: http">
     <configuration name="HotelApp.WebApi: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/HotelApp.WebApi.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -182,7 +194,7 @@
       <workItem from="1697409052827" duration="18160000" />
       <workItem from="1697764741777" duration="33019000" />
       <workItem from="1698082483817" duration="3776000" />
-      <workItem from="1698609594366" duration="5612000" />
+      <workItem from="1698609594366" duration="6932000" />
     </task>
     <servers />
   </component>
