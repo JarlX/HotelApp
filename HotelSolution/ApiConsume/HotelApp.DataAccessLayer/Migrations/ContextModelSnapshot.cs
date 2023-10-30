@@ -236,6 +236,10 @@ namespace HotelApp.DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Subject")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("ContactID");
 
                     b.ToTable("Contacts");
