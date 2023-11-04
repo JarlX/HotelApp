@@ -1,0 +1,45 @@
+@model AboutUpdateDTO
+
+@{
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+
+}
+
+<form method="post">
+  <input type="hidden" asp-for="AboutID"/>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col input-group mb-3">
+        <label class="input-group-text">Başlık 1</label>
+        <input type="text" asp-for="Title1" class="form-control" />
+      </div>
+      <div class="col input-group mb-3">
+        <label class="input-group-text">Başlık 2</label>
+        <input type="text" asp-for="Title2" class="form-control"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col input-group mb-3">
+        <label class="input-group-text">İçerik</label>
+        <input type="text" asp-for="Content" class="form-control"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col input-group mb-3">
+        <label class="input-group-text">Oda Sayısı</label>
+        <input disabled type="text" asp-for="RoomCount" class="form-control"/>
+      </div>
+      <div class="col input-group mb-3">
+        <label class="input-group-text">Çalışan Sayısı</label>
+        <input disabled type="text" asp-for="StaffCount" class="form-control"/>
+      </div>
+      <div class="col input-group mb-3">
+        <label class="input-group-text">Müşteri Sayısı</label>
+        <input disabled type="text" asp-for="CustomerCount" class="form-control"/>
+      </div>
+    </div>
+    <br/>
+    <button class="btn btn-outline-primary float-right" href="/AdminAbout/Index">Hakkında Güncelle</button>
+  </div>
+</form>
+
