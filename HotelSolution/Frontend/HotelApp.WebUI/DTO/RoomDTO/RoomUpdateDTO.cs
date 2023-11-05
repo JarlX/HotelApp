@@ -2,6 +2,8 @@ namespace HotelApp.WebUI.DTO.RoomDTO;
 
 public class RoomUpdateDTO
 {
+    public int RoomID { get; set; }
+    
     public string RoomNumber { get; set; }
 
     public string RoomCoverImage { get; set; }

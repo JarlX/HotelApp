@@ -1,18 +1,57 @@
-@model TModel
+@model List<RoomResultDTO>
 
 @{
-    Layout = null;
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
 }
 
 <!DOCTYPE html>
 
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      
+<h2>Oda Detayları</h2>
+<div class="col-lg-12">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th></th>
+                <th>Oda No</th>
+                <th>Ücreti</th>
+                <th>Başlık</th>
+                <th>Yatak Sayısı</th>
+                <th>Banyo Sayısı</th>
+                <th>Wifi Durumu</th>
+                <th>Açıklama</th>
+                <th>Güncelle</th>
+                <th>Sil</th>
+            </tr>
+            </thead>
+            <tbody>
+            @{
+                var count = 0;
+            }
+            @foreach (var item in Model)
+            {
+                count++;
+                <tr>
+                    <th>@count</th>
+                    <td>@item.RoomNumber</td>
+                    <td>@item.Price</td>
+                    <td>@item.Title</td>
+                    <td>@item.BedCount</td>
+                    <td>@item.BathCount</td>
+                    <td >@(item.WifiStatus ? "Var" : "Yok")</td>
+                    <td >@item.Description</td>
+                    <td>
+                        <a class="btn mb-1 btn-rounded btn-success" href="/AdminRoom/UpdateRoom/@item.RoomID">Güncelle</a>
+                    </td>
+                    <td>
+                        <a class="btn mb-1 btn-rounded btn-danger" href="/AdminRoom/DeleteRoom/@item.RoomID">Sil</a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+        <a href="/AdminRoom/AddRoom/" class="btn mb-1 btn-rounded btn-info">Yeni Oda Ekle</a>
+    </div>
 </div>
-</body>
-</html>
+
+

@@ -65,5 +65,22 @@ namespace HotelApp.WebUI.Controllers
             }
             return View();
         }
+
+        
+        //Çalışmıyor??
+        [HttpPost]
+        public async Task<IActionResult> DeleteAbout(int id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var response = await client.DeleteAsync($"http://localhost:5292/api/DeleteAbout/{id}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index");
+
+            }
+
+            return View();
+        }
     }
 }
