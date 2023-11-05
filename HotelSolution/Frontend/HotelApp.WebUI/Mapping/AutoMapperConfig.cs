@@ -4,9 +4,11 @@ using AutoMapper;
 using DTO.AboutDTO;
 using DTO.BookingDTO;
 using DTO.ContactDTO;
+using DTO.GuestDTO;
 using DTO.LoginDTO;
 using DTO.NewsletterDTO;
 using DTO.RegisterDTO;
+using DTO.RoomDTO;
 using DTO.ServiceDTO;
 using DTO.StaffDTO;
 using DTO.TestimonialDTO;
@@ -35,5 +37,14 @@ public class AutoMapperConfig : Profile
         CreateMap<CreateBookingDTO, Booking>().ReverseMap();
 
         CreateMap<CreateContactDTO, Contact>().ReverseMap();
+        CreateMap<ResultContactDTO, Contact>().ReverseMap();
+
+        CreateMap<RoomCreateDTO, Room>().ReverseMap();
+        CreateMap<RoomResultDTO, Room>().ReverseMap();
+        CreateMap<RoomUpdateDTO, Room>().ReverseMap();
+
+        CreateMap<CreateGuestDTO, Guest>().ReverseMap();
+        CreateMap<ResultGuestDTO, Guest>().ReverseMap();
+        CreateMap<UpdateGuestDTO, Guest>().ReverseMap();
     }
 }

@@ -36,7 +36,7 @@ namespace HotelApp.WebApi.Controllers
         }
 
         [HttpPost]
-        public IActionResult PostGuest(Guest guest)
+        public IActionResult AddGuest(Guest guest)
         {
             _guestService.TInsert(guest);
             return Ok();

@@ -108,6 +108,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVmYXVsdC9fTmV3c2xldHRlclBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/Guest/AddGuest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3Vlc3QvQWRkR3Vlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/Guest/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3Vlc3QvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/Guest/UpdateGuest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3Vlc3QvVXBkYXRlR3Vlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

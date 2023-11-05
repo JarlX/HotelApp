@@ -1,0 +1,29 @@
+@model CreateGuestDTO
+
+@{
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<form method="post">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col input-group mb-3">
+        <label class="input-group-text">Misafir Adı</label>
+        <input type="text" asp-for="Name" class="form-control" />
+      </div>
+      <div class="col input-group mb-3">
+        <label class="input-group-text">Misafir Soyadı</label>
+        <input type="text" asp-for="Surname" class="form-control" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col input-group mb-3">
+        <label class="input-group-text">Misafir Şehri</label>
+        <input type="text" asp-for="City" class="form-control" />
+      </div>
+    </div>
+    <br/>
+  <button class="btn btn-outline-primary float-right" href="/Guest/Index">Misafir Ekle</button>
+  </div>
+</form>
+

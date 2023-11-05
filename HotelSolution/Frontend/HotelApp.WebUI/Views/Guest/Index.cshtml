@@ -1,0 +1,31 @@
+@model List<ResultGuestDTO>
+
+@{
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Müşteri Adı Soyadı</th>
+        <th>Müşteri Şehri</th>
+        <th>Güncelle</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        
+        <tr>
+            <td></td>
+            <td>@item.Name @item.Surname</td>
+            <td>@item.City</td>
+            <td>
+                <a class="btn mb-1 btn-rounded btn-outline-success" href="/Guest/UpdateGuest/@item.GuestID">Güncelle</a>
+            </td>
+            <td>
+                <a class="btn mb-1 btn-rounded btn-outline-danger" href="/Guest/DeleteGuest/@item.GuestID">Sil</a>
+            </td>
+        </tr>
+    }
+</table>
+<a href="/Guest/AddGuest/" class="btn mb-1 btn-rounded btn-info">Yeni Misafir</a>

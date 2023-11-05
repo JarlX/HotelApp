@@ -20,18 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab40fe3e-8980-4642-8b0a-c22027b1d73b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminAbout/DeleteAbout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminRoom/AddRoom.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminRoom/DeleteRoom.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminRoom/UpdateRoom.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/GuestController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/GuestDTO/CreateGuestDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/GuestDTO/ResultGuestDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/GuestDTO/UpdateGuestDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Guest/AddGuest.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Guest/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Guest/UpdateGuest.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HotelSolution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HotelSolution/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/Controllers/GuestController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/Controllers/GuestController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/AdminAboutController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/AdminAboutController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/AdminRoomController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/AdminRoomController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/RoomDTO/RoomResultDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/RoomDTO/RoomResultDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/RoomDTO/RoomUpdateDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/RoomDTO/RoomUpdateDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminAbout/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminAbout/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminLayout/SidebarPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminLayout/SidebarPartial.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminRoom/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminRoom/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Mapping/AutoMapperConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Mapping/AutoMapperConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/_ViewImports.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.WebUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.WebUI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.WebUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.WebUI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/HotelApp.WebUI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/HotelApp.WebUI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
@@ -105,7 +105,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.HotelApp.WebApi: http">
+  <component name="RunManager" selected=".NET Launch Settings Profile.HotelApp.WebUI: http">
     <configuration name="HotelApp.WebApi: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/HotelApp.WebApi.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -197,7 +197,7 @@
       <workItem from="1697409052827" duration="18160000" />
       <workItem from="1697764741777" duration="33019000" />
       <workItem from="1698082483817" duration="3776000" />
-      <workItem from="1698609594366" duration="35346000" />
+      <workItem from="1698609594366" duration="40937000" />
     </task>
     <servers />
   </component>
@@ -250,19 +250,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/AdminAboutController.cs</url>
-          <line>70</line>
-          <properties documentPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/AdminAboutController.cs" initialLine="70" containingFunctionPresentation="Method 'DeleteAbout'">
-            <startOffsets>
-              <option value="2329" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2330" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
