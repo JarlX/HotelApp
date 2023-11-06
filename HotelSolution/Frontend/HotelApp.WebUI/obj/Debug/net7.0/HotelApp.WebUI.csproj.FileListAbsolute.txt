@@ -553,3 +553,6 @@
 /Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
 /Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
 /Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/obj/Debug/net7.0/HotelApp.WebUI.MvcApplicationPartsAssemblyInfo.cs
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/FluentValidation.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/FluentValidation.AspNetCore.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/FluentValidation.DependencyInjectionExtensions.dll

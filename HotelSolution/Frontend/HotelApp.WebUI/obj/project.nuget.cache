@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sZrWL2vX3MwRSrstdEPB6Pu2TGQOaIbJh00KdvlrEC0JotMACFhuBUszhJq5/VdEl/05ICMRge+5Ii2rqKvjwQ==",
+  "dgSpecHash": "2zJWQmq1HGPW7A4KcJhgSGNLeOhapjD+4iHFSLl4PLtoqJwpp70Nl31PG5roK0PMr8lmXC4lI86etZWSLTG7KA==",
   "success": true,
   "projectFilePath": "/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/HotelApp.WebUI.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,9 @@
     "/Users/salihcancakar/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/Users/salihcancakar/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/salihcancakar/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
+    "/Users/salihcancakar/.nuget/packages/fluentvalidation/11.8.0/fluentvalidation.11.8.0.nupkg.sha512",
+    "/Users/salihcancakar/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "/Users/salihcancakar/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.8.0/fluentvalidation.dependencyinjectionextensions.11.8.0.nupkg.sha512",
     "/Users/salihcancakar/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/Users/salihcancakar/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/salihcancakar/.nuget/packages/humanizer.core.af/2.14.1/humanizer.core.af.2.14.1.nupkg.sha512",

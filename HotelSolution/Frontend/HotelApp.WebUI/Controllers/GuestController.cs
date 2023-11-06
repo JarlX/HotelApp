@@ -8,6 +8,7 @@ namespace HotelApp.WebUI.Controllers
 {
     using System.Text;
     using DTO.GuestDTO;
+    using Microsoft.EntityFrameworkCore.Metadata.Internal;
     using Newtonsoft.Json;
 
     public class GuestController : Controller
@@ -33,21 +34,31 @@ namespace HotelApp.WebUI.Controllers
             }
             return View();
         }
+        
+        [HttpGet]
+        public IActionResult AddGuest()
+        {
+            return View();
+        }
 
         [HttpPost]
         public async Task<IActionResult> AddGuest(CreateGuestDTO createGuestDto)
         {
-            var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(createGuestDto);
-
-            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var response = await client.PostAsync("http://localhost:5292/api/AddGuest", stringContent);
-
-            if (response.IsSuccessStatusCode)
+            if (ModelState.IsValid)
             {
-                return RedirectToAction("Index");
+                var client = _httpClientFactory.CreateClient();
+                var jsonData = JsonConvert.SerializeObject(createGuestDto);
+
+                StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+                var response = await client.PostAsync("http://localhost:5292/api/AddGuest", stringContent);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Index");
+                }
             }
-            return RedirectToAction("Index");
+
+            return View();
         }
 
         [HttpGet]

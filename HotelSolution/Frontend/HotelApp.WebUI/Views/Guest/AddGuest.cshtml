@@ -10,16 +10,19 @@
       <div class="col input-group mb-3">
         <label class="input-group-text">Misafir Adı</label>
         <input type="text" asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
       </div>
       <div class="col input-group mb-3">
         <label class="input-group-text">Misafir Soyadı</label>
         <input type="text" asp-for="Surname" class="form-control" />
+        <span asp-validation-for="Surname" class="text-danger"></span>
       </div>
     </div>
     <div class="row">
       <div class="col input-group mb-3">
         <label class="input-group-text">Misafir Şehri</label>
         <input type="text" asp-for="City" class="form-control" />
+        <span asp-validation-for="City" class="text-danger"></span>
       </div>
     </div>
     <br/>
