@@ -28,7 +28,7 @@ namespace HotelApp.WebApi.Controllers
             return Ok(contacts);
         }
 
-        [HttpGet("id:int")]
+        [HttpGet("{id}")]
         public IActionResult GetContact(int id)
         {
             var contact = _contactService.TGetById(id);

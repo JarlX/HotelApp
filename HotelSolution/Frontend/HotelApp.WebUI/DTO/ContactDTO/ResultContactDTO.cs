@@ -1,5 +1,7 @@
 namespace HotelApp.WebUI.DTO.ContactDTO;
 
+using SendMessageDTO;
+
 public class ResultContactDTO
 {
     public int ContactID { get; set; }
@@ -13,5 +15,8 @@ public class ResultContactDTO
     public string Message { get; set; }
 
     public DateTime MsgDate { get; set; }
+    
+    public ResultSendMessageDTO? ResultSendMessageDto { get; set; }
+
     
 }

@@ -1,0 +1,37 @@
+@model ResultContactDTO
+
+@{
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<div class="read-content">
+    <div class="media pt-5">
+        <img class="mr-3 rounded-circle" src="/images/avatar/1.jpg">
+        <div class="media-body">
+            <h5 class="m-b-3">@Model.SenderName</h5>
+            <p class="m-b-2">@Model.MsgDate.ToLongDateString()</p>
+        </div>
+    </div>
+    <hr>
+    <div class="media mb-4 mt-1">
+        <div class="media-body"><span class="float-right">@Model.MsgDate.ToShortTimeString()</span>
+            <h4 class="m-0 text-primary">@Model.Subject</h4><small class="text-muted">To:Me,@Model.SenderMail</small>
+        </div>
+    </div>
+    <h5 class="m-b-15">Hi,Ingredia,</h5>
+    <p class="m-b-15">@Model.Message</p>
+    <h5 class="m-b-5 p-t-15">Kind Regards</h5>
+    <div class="form-group p-t-15">
+        <form method="post" asp-action="AddSendMessage" asp-controller="AdminContact">
+            <input value="@Model.SenderName" asp-for="ResultSendMessageDto!.ReceiverName" hidden/>
+            <input value="@Model.SenderMail" asp-for="ResultSendMessageDto!.ReceiverMail" hidden/>
+            <input value="@Model.Subject" asp-for="ResultSendMessageDto!.Title" hidden/>
+            <div class="form-group">
+            <textarea class="w-100 p-20 l-border-1" name="" id="" cols="30" rows="5" placeholder="Mesajını giriniz" asp-for="ResultSendMessageDto!.Content"></textarea>
+            </div>
+            <div class="text-left m-t-15">
+                <button class="btn btn-primary m-b-30 m-t-15 f-s-14 p-l-20 p-r-20 m-r-10"><i class="fa fa-paper-plane m-r-5"></i>Gönder</button>
+            </div>
+        </form>
+    </div>
+</div>

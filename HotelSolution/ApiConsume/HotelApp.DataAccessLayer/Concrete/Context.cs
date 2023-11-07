@@ -31,5 +31,6 @@ public class Context : IdentityDbContext<AppUser,AppRole,int>
     public DbSet<Guest> Guests { get; set; }
 
     public DbSet<Contact> Contacts { get; set; }
-    
+
+    public DbSet<SendMessage> SendMessages { get; set; }
 }

@@ -6,7 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HotelApp.WebUI.Controllers
 {
+    using System.Text;
     using DTO.ContactDTO;
+    using DTO.SendMessageDTO;
     using Newtonsoft.Json;
 
     public class AdminContactController : Controller
@@ -26,8 +28,65 @@ namespace HotelApp.WebUI.Controllers
             if (response.IsSuccessStatusCode)
             {
                 var jsonData = await response.Content.ReadAsStringAsync();
-                var contacts = JsonConvert.DeserializeObject<List<ResultContactDTO>>(jsonData);
+                var contacts = JsonConvert.DeserializeObject<List<InboxContactDTO>>(jsonData);
                 return View(contacts);
+            }
+            
+            return View();
+        }
+
+        public async Task<IActionResult> Sendbox()
+        {
+            var client = _httpClientFactory.CreateClient();
+            var response = await client.GetAsync("http://localhost:5292/api/SendMessageList");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonData = await response.Content.ReadAsStringAsync();
+                var sendMessages = JsonConvert.DeserializeObject<List<ResultSendMessageDTO>>(jsonData);
+                return View(sendMessages);
+            }
+
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult AddSendMessage()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public async Task<IActionResult> AddSendMessage(CreateSendMessageDTO createSendMessageDto)
+        {
+            createSendMessageDto.SenderMail = "admin@goldfish.com";
+            createSendMessageDto.SenderName = "Admin";
+            createSendMessageDto.Date = DateTime.Parse(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+            var client = _httpClientFactory.CreateClient();
+            var jsonData = JsonConvert.SerializeObject(createSendMessageDto);
+            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+
+            var response = await client.PostAsync("http://localhost:5292/api/AddSendMessage", stringContent);
+
+            if (response.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Sendbox");
+            }
+
+            return View();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> MessageDetails(int id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var response = await client.GetAsync($"http://localhost:5292/api/GetContact/{id}");
+            
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonData = await response.Content.ReadAsStringAsync();
+                var sendMessage = JsonConvert.DeserializeObject<ResultContactDTO>(jsonData);
+                return View(sendMessage);
             }
             
             return View();
