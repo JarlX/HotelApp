@@ -1,9 +1,8 @@
-@model  List<InboxContactDTO>
+@model GetMessageByIdDTO
 
 @{
     Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
 }
-
 
 <div class="email-left-box">
   <a href="/AdminContact/AddSendMessage/Index" class="btn btn-primary btn-block"
@@ -15,7 +14,7 @@
       class="list-group-item border-0 text-primary p-r-0"
     ><i class="fa fa-inbox font-18 align-middle mr-2"></i> <b>Gelen Kutusu</b>
       <span class="badge badge-primary badge-sm float-right m-t-5"
-      >@Model.Count</span
+      >5</span
       >
     </a>
     <a href="/AdminContact/Sendbox" class="list-group-item border-0 p-r-0"
@@ -63,26 +62,23 @@
       </button>
     </div>
   </div>
-  <div class="email-list m-t-15">
-    @foreach (var item in Model)
-    {
-      <div class="message">
-        <a href="/AdminContact/MessageDetailsByInbox/@item.ContactID">
-          <div class="col-mail col-mail-1">
-            <div class="email-checkbox">
-              <input type="checkbox" id="chk2"/>
-              <label class="toggle" for="chk2"></label>
-            </div>
-            <span class="star-toggle ti-star"></span>
+  <div class="read-content">
+      <div class="media pt-5">
+          <img class="mr-3 rounded-circle" src="/adminTheme/images/avatar/1.jpg">
+          <div class="media-body">
+              <h5 class="m-b-3">@Model.ReceiverName</h5>
+              <p class="m-b-2">@Model.Date.ToLongDateString()</p>
           </div>
-          <div class="col-mail col-mail-2">
-            <div class="subject">
-              @item.Message
-            </div>
-            <div class="date">@item.MsgDate.ToShortDateString()</div>
-          </div>
-        </a>
       </div>
-    }
+      <hr>
+      <div class="media mb-4 mt-1">
+          <div class="media-body"><span class="float-right">@Model.Date.ToShortTimeString()</span>
+              <h4 class="m-0 text-primary">@Model.Title</h4><small class="text-muted">To:Me, Sender:@Model.ReceiverMail</small>
+          </div>
+      </div>
+      <h5 class="m-b-15">Hi,@Model.SenderMail,</h5>
+      <p class="m-b-15">@Model.Content</p>
+      <h5 class="m-b-5 p-t-15">Kind Regards</h5>
+      <hr/>
   </div>
 </div>

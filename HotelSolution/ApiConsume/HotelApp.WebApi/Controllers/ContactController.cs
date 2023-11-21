@@ -15,10 +15,12 @@ namespace HotelApp.WebApi.Controllers
     public class ContactController : ControllerBase
     {
         private readonly IContactService _contactService;
+        private readonly ISendMessageService _sendMessageService;
 
-        public ContactController(IContactService contactService)
+        public ContactController(IContactService contactService, ISendMessageService sendMessageService)
         {
             _contactService = contactService;
+            _sendMessageService = sendMessageService;
         }
 
         [HttpGet]
@@ -56,6 +58,13 @@ namespace HotelApp.WebApi.Controllers
             var contact = _contactService.TGetById(id);
             _contactService.TDelete(contact);
             return Ok();
+        }
+        
+        [HttpGet("{id}")]
+        public IActionResult GetMessagesByContactId(int id)
+        {
+            var messages = _sendMessageService.TGetById(id);
+            return Ok(messages);
         }
     }
 }

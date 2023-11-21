@@ -40,8 +40,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5Db250YWN0L0luYm94LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/AdminContact/MessageDetails.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5Db250YWN0L01lc3NhZ2VEZXRhaWxzLmNzaHRtbA==
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/AdminContact/MessageDetailsByInbox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5Db250YWN0L01lc3NhZ2VEZXRhaWxzQnlJbmJveC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/AdminContact/MessageDetailsBySendBox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5Db250YWN0L01lc3NhZ2VEZXRhaWxzQnlTZW5kQm94LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/AdminContact/Sendbox.cshtml]

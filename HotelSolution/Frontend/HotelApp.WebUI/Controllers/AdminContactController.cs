@@ -43,7 +43,7 @@ namespace HotelApp.WebUI.Controllers
             if (response.IsSuccessStatusCode)
             {
                 var jsonData = await response.Content.ReadAsStringAsync();
-                var sendMessages = JsonConvert.DeserializeObject<List<ResultSendMessageDTO>>(jsonData);
+                var sendMessages = JsonConvert.DeserializeObject<List<SendboxContactDTO>>(jsonData);
                 return View(sendMessages);
             }
 
@@ -77,7 +77,23 @@ namespace HotelApp.WebUI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> MessageDetails(int id)
+        public async Task<IActionResult> MessageDetailsBySendBox(int id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var response = await client.GetAsync($"http://localhost:5292/api/GetMessagesByContactId/{id}");
+            
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonData = await response.Content.ReadAsStringAsync();
+                var sendMessage = JsonConvert.DeserializeObject<GetMessageByIdDTO>(jsonData);
+                return View(sendMessage);
+            }
+            
+            return View();
+        }
+        
+        [HttpGet]
+        public async Task<IActionResult> MessageDetailsByInbox(int id)
         {
             var client = _httpClientFactory.CreateClient();
             var response = await client.GetAsync($"http://localhost:5292/api/GetContact/{id}");
@@ -85,7 +101,7 @@ namespace HotelApp.WebUI.Controllers
             if (response.IsSuccessStatusCode)
             {
                 var jsonData = await response.Content.ReadAsStringAsync();
-                var sendMessage = JsonConvert.DeserializeObject<ResultContactDTO>(jsonData);
+                var sendMessage = JsonConvert.DeserializeObject<InboxContactDTO>(jsonData);
                 return View(sendMessage);
             }
             

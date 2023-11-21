@@ -37,7 +37,6 @@ public class AutoMapperConfig : Profile
         CreateMap<CreateBookingDTO, Booking>().ReverseMap();
 
         CreateMap<CreateContactDTO, Contact>().ReverseMap();
-        CreateMap<ResultContactDTO, Contact>().ReverseMap();
 
         CreateMap<RoomCreateDTO, Room>().ReverseMap();
         CreateMap<RoomResultDTO, Room>().ReverseMap();
