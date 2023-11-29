@@ -8,8 +8,10 @@ namespace HotelApp.WebUI.Controllers
 {
     using System.Text;
     using DTO.NewsletterDTO;
+    using Microsoft.AspNetCore.Authorization;
     using Newtonsoft.Json;
 
+    [AllowAnonymous]
     public class DefaultController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;
@@ -18,7 +20,7 @@ namespace HotelApp.WebUI.Controllers
         {
             _httpClientFactory = httpClientFactory;
         }
-
+        
         public IActionResult Index()
         {
             return View();

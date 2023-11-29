@@ -37,4 +37,9 @@ public class ContactManager : IContactService
     {
         return _contactDal.GetByID(id);
     }
+
+    public int TGetContactCount()
+    {
+        return _contactDal.GetContactCount();
+    }
 }

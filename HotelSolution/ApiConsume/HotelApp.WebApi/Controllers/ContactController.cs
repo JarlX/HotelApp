@@ -66,5 +66,11 @@ namespace HotelApp.WebApi.Controllers
             var messages = _sendMessageService.TGetById(id);
             return Ok(messages);
         }
+
+        [HttpGet]
+        public IActionResult GetContactCount()
+        {
+            return Ok(_contactService.TGetContactCount());
+        }
     }
 }

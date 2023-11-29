@@ -8,8 +8,10 @@ namespace HotelApp.WebUI.Controllers
 {
     using System.Text;
     using DTO.BookingDTO;
+    using Microsoft.AspNetCore.Authorization;
     using Newtonsoft.Json;
 
+    [AllowAnonymous]
     public class BookingController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;

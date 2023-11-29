@@ -8,8 +8,10 @@ namespace HotelApp.WebUI.Controllers
 {
     using DTO.LoginDTO;
     using EntityLayer.Concrete;
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
 
+    [AllowAnonymous]
     public class LoginController : Controller
     {
 

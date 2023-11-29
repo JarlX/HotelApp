@@ -8,7 +8,6 @@ namespace HotelApp.WebUI.Controllers
 {
     using System.Text;
     using DTO.GuestDTO;
-    using Microsoft.EntityFrameworkCore.Metadata.Internal;
     using Newtonsoft.Json;
 
     public class GuestController : Controller

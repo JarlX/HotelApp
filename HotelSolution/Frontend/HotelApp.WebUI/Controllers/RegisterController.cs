@@ -8,8 +8,10 @@ namespace HotelApp.WebUI.Controllers
 {
     using DTO.RegisterDTO;
     using EntityLayer.Concrete;
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
 
+    [AllowAnonymous]
     public class RegisterController : Controller
     {
         private readonly UserManager<AppUser> _userManager;

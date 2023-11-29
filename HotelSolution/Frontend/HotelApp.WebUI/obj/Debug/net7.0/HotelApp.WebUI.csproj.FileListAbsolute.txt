@@ -556,3 +556,7 @@
 /Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/FluentValidation.dll
 /Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/FluentValidation.AspNetCore.dll
 /Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/MailKit.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/MimeKit.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/NETCore.MailKit.dll
+/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/bin/Debug/net7.0/BouncyCastle.Crypto.dll
