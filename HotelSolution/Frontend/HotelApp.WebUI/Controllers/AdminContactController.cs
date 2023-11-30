@@ -29,7 +29,19 @@ namespace HotelApp.WebUI.Controllers
             {
                 var jsonData = await response.Content.ReadAsStringAsync();
                 var contacts = JsonConvert.DeserializeObject<List<InboxContactDTO>>(jsonData);
+                
+                var contactCount = await client.GetAsync("http://localhost:5292/api/GetContactCount");
+                var sendMessageCount = await client.GetAsync("http://localhost:5292/api/GetSendMessageCount");
+                if (contactCount.IsSuccessStatusCode)
+                {
+                    var jsonDataContactCount = await contactCount.Content.ReadAsStringAsync();
+                    var jsonDataSendMessageCount = await sendMessageCount.Content.ReadAsStringAsync();
+                    ViewBag.dataContactCount = jsonDataContactCount;
+                    ViewBag.dataSendMessageCount = jsonDataSendMessageCount;
+                }
+
                 return View(contacts);
+                
             }
             
             return View();
@@ -44,6 +56,16 @@ namespace HotelApp.WebUI.Controllers
             {
                 var jsonData = await response.Content.ReadAsStringAsync();
                 var sendMessages = JsonConvert.DeserializeObject<List<SendboxContactDTO>>(jsonData);
+                
+                var contactCount = await client.GetAsync("http://localhost:5292/api/GetContactCount");
+                var sendMessageCount = await client.GetAsync("http://localhost:5292/api/GetSendMessageCount");
+                if (contactCount.IsSuccessStatusCode)
+                {
+                    var jsonDataContactCount = await contactCount.Content.ReadAsStringAsync();
+                    var jsonDataSendMessageCount = await sendMessageCount.Content.ReadAsStringAsync();
+                    ViewBag.dataContactCount = jsonDataContactCount;
+                    ViewBag.dataSendMessageCount = jsonDataSendMessageCount;
+                }
                 return View(sendMessages);
             }
 

@@ -6,36 +6,41 @@ using EntityLayer.Concrete;
 
 public class SendMessageManager : ISendMessageService
 {
-    private readonly ISendMessageDal _sendMessage;
+    private readonly ISendMessageDal _sendMessageDal;
 
     public SendMessageManager(ISendMessageDal sendMessage)
     {
-        _sendMessage = sendMessage;
+        _sendMessageDal = sendMessage;
     }
 
 
     public void TInsert(SendMessage t)
     {
-        _sendMessage.Insert(t);
+        _sendMessageDal.Insert(t);
     }
 
     public void TDelete(SendMessage t)
     {
-        _sendMessage.Delete(t);
+        _sendMessageDal.Delete(t);
     }
 
     public void TUpdate(SendMessage t)
     {
-        _sendMessage.Update(t);
+        _sendMessageDal.Update(t);
     }
 
     public List<SendMessage> TGetList()
     {
-        return _sendMessage.GetList();
+        return _sendMessageDal.GetList();
     }
 
     public SendMessage TGetById(int id)
     {
-        return _sendMessage.GetByID(id);
+        return _sendMessageDal.GetByID(id);
+    }
+
+    public int TGetContactCount()
+    {
+        return _sendMessageDal.GetSendMessageCount();
     }
 }

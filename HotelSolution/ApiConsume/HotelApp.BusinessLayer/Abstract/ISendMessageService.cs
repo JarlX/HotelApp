@@ -4,5 +4,5 @@ using EntityLayer.Concrete;
 
 public interface ISendMessageService : IGenericService<SendMessage>
 {
-    
+    public int TGetContactCount();
 }

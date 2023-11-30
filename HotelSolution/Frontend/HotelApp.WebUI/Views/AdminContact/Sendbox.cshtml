@@ -14,16 +14,17 @@
       class="list-group-item border-0 text-primary p-r-0"
     ><i class="fa fa-inbox font-18 align-middle mr-2"></i> <b>Gelen Kutusu</b>
       <span class="badge badge-primary badge-sm float-right m-t-5"
-      >@Model.Count</span
+      >@ViewBag.dataContactCount</span
       >
     </a>
     <a href="/AdminContact/Sendbox" class="list-group-item border-0 p-r-0"
-    ><i class="fa fa-paper-plane font-18 align-middle mr-2"></i>Giden Kutusu</a
-    >
-    <a href="#" class="list-group-item border-0 p-r-0"
+    ><i class="fa fa-paper-plane font-18 align-middle mr-2"></i>Giden Kutusu
+      <span class="badge badge-info badge-sm float-right m-t-5">@ViewBag.dataSendMessageCount</span>
+    </a>
+    <a href="/AdminContact/Inbox" class="list-group-item border-0 p-r-0"
     ><i class="fa fa-star-o font-18 align-middle mr-2"></i>Önemli
       <span class="badge badge-danger badge-sm float-right m-t-5"
-      >47</span
+      >@ViewBag.dataContactCount</span
       >
     </a>
     <a href="#" class="list-group-item border-0 p-r-0"

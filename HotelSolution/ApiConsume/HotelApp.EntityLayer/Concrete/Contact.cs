@@ -13,4 +13,8 @@ public class Contact
     public string Message { get; set; }
 
     public DateTime MsgDate { get; set; }
+
+    public int MessageCategoryID { get; set; }
+
+    public MessageCategory MessageCategory { get; set; }
 }
