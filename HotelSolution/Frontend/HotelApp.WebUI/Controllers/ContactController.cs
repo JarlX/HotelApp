@@ -8,7 +8,9 @@ namespace HotelApp.WebUI.Controllers
 {
     using System.Text;
     using DTO.ContactDTO;
+    using DTO.MessageCategoryDTO;
     using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Mvc.Rendering;
     using Newtonsoft.Json;
 
     [AllowAnonymous]
@@ -21,8 +23,23 @@ namespace HotelApp.WebUI.Controllers
             _httpClientFactory = httpClientFactory;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            var client = _httpClientFactory.CreateClient();
+            var response = await client.GetAsync("http://localhost:5292/api/GetMessageCategories");
+
+            var jsonData = await response.Content.ReadAsStringAsync();
+            var values = JsonConvert.DeserializeObject<List<ResultMessageCategoryDTO>>(jsonData);
+
+            List<SelectListItem> dropDownList = (from i in values
+                select new SelectListItem
+                {
+                    Text = i.MessageCateegoryName,
+                    Value = i.MessageCategoryID.ToString()
+                }).ToList();
+            
+            ViewBag.dropDownList = dropDownList;
+            
             return View();
         }
 

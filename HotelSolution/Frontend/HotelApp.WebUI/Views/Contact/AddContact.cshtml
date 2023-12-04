@@ -47,8 +47,14 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
+                                            @Html.DropDownListFor(x => x.MessageCategoryID, (List<SelectListItem>) ViewBag.dropDownList,new {@class="form-control"})
+                                            <label for="subject">Konu Seçiniz</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
                                             <input type="text" class="form-control" id="subject" placeholder="Subject" asp-for="Subject">
-                                            <label for="subject">Konu</label>
+                                            <label for="subject">Konu Başlığı</label>
                                         </div>
                                     </div>
                                     <div class="col-12">

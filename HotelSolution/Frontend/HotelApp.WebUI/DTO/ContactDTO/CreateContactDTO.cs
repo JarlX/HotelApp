@@ -10,4 +10,8 @@ public class CreateContactDTO
 
     public string Message { get; set; }
 
+    public int MessageCategoryID { get; set; }
+
+    public string MessageCategoryName { get; set; }
+
 }
