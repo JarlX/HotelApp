@@ -1,0 +1,25 @@
+@model UpdateWorkLocationDTO
+
+@{
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<form method="post">
+    <input type="hidden" asp-for="WorkLocationID"/>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col input-group mb-3">
+                <label class="input-group-text">Otel İsmi</label>
+                <input type="text" asp-for="WorkLocationName" class="form-control"/>
+            </div>
+            <div class="col input-group mb-3">
+                <label class="input-group-text">Şehir</label>
+                <input type="text" asp-for="WorkLocationName" class="form-control"/>
+            </div>
+        </div>
+        <br/>
+        <button class="btn btn-outline-primary float-right" href="/AdminWorkLocation/Index">Otel Konumu Güncelle</button>
+    </div>
+</form>

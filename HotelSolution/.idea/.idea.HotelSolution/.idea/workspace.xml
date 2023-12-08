@@ -20,18 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab40fe3e-8980-4642-8b0a-c22027b1d73b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/Abstract/IMessageCategoryService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/Concrete/MessageCategoryManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/Abstract/IMessageCategoryDal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/EntityFramework/EfMessageCategoryDal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/Migrations/20231130022407_m10_MessageCategory.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/Migrations/20231130022407_m10_MessageCategory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/Migrations/20231203003221_m11_User_ImageUrl.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/Migrations/20231203003221_m11_User_ImageUrl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/Controllers/MessageCategoryController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/AdminUsersController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/MessageCategoryDTO/ResultMessageCategoryDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminUsers/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/Abstract/IWorkLocationService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/Concrete/WorkLocationManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/Abstract/IWorkLocationDal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/EntityFramework/EfWorkLocationDal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/Migrations/20231204021606_m12_worklocation.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/Migrations/20231204021606_m12_worklocation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/Concrete/WorkLocation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/Controllers/WorkLocationController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/AdminWorkLocationController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/WorkLocationDTO/CreateWorkLocationDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/WorkLocationDTO/ResultWorkLocationDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/WorkLocationDTO/UpdateWorkLocationDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminWorkLocation/AddWorkLocation.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminWorkLocation/DeleteWorkLocation.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminWorkLocation/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminWorkLocation/UpdateWorkLocation.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HotelSolution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HotelSolution/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.BusinessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.BusinessLayer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.BusinessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.BusinessLayer.pdb" afterDir="false" />
@@ -89,11 +93,13 @@
       <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/HotelApp.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/HotelApp.WebApi.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/ref/HotelApp.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/ref/HotelApp.WebApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/refint/HotelApp.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/refint/HotelApp.WebApi.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/ContactController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/ContactController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/ContactDTO/CreateContactDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/ContactDTO/CreateContactDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/RegisterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/RegisterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/RegisterDTO/CreateNewUserDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/RegisterDTO/CreateNewUserDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Mapping/AutoMapperConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Mapping/AutoMapperConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminLayout/SidebarPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminLayout/SidebarPartial.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminRoom/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminRoom/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Contact/AddContact.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Contact/AddContact.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminUsers/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminUsers/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Register/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Register/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/_ViewImports.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.DataAccessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.DataAccessLayer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.DataAccessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.DataAccessLayer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.EntityLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.EntityLayer.dll" afterDir="false" />
@@ -171,7 +177,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.HotelApp.WebUI: http">
+  <component name="RunManager" selected=".NET Launch Settings Profile.HotelApp.WebApi: http">
     <configuration name="HotelApp.WebApi: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/HotelApp.WebApi.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -265,7 +271,7 @@
       <workItem from="1698082483817" duration="3776000" />
       <workItem from="1698609594366" duration="50279000" />
       <workItem from="1699306349761" duration="21220000" />
-      <workItem from="1700522226144" duration="44725000" />
+      <workItem from="1700522226144" duration="64938000" />
     </task>
     <servers />
   </component>
@@ -304,6 +310,23 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/AdminWorkLocationController.cs</url>
+          <line>41</line>
+          <properties documentPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/AdminWorkLocationController.cs" initialLine="41" containingFunctionPresentation="Method 'AddWorkLocation'">
+            <startOffsets>
+              <option value="1275" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1322" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Type#System.Net.Http.HttpResponseMessage" memberName="Content" />

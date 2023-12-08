@@ -157,6 +157,13 @@ namespace HotelApp.DataAccessLayer.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
+                    b.Property<string>("WorkDepartment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("WorkLocationID")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("NormalizedEmail")
@@ -166,6 +173,8 @@ namespace HotelApp.DataAccessLayer.Migrations
                         .IsUnique()
                         .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.HasIndex("WorkLocationID");
 
                     b.ToTable("AspNetUsers", (string)null);
                 });
@@ -495,6 +504,27 @@ namespace HotelApp.DataAccessLayer.Migrations
                     b.ToTable("Testimonials");
                 });
 
+            modelBuilder.Entity("HotelApp.EntityLayer.Concrete.WorkLocation", b =>
+                {
+                    b.Property<int>("WorkLocationID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("WorkLocationID"));
+
+                    b.Property<string>("WorkLocationCity")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("WorkLocationName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("WorkLocationID");
+
+                    b.ToTable("WorkLocations");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
                 {
                     b.Property<int>("Id")
@@ -598,6 +628,17 @@ namespace HotelApp.DataAccessLayer.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("HotelApp.EntityLayer.Concrete.AppUser", b =>
+                {
+                    b.HasOne("HotelApp.EntityLayer.Concrete.WorkLocation", "WorkLocation")
+                        .WithMany("AppUsers")
+                        .HasForeignKey("WorkLocationID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("WorkLocation");
+                });
+
             modelBuilder.Entity("HotelApp.EntityLayer.Concrete.Contact", b =>
                 {
                     b.HasOne("HotelApp.EntityLayer.Concrete.MessageCategory", "MessageCategory")
@@ -663,6 +704,11 @@ namespace HotelApp.DataAccessLayer.Migrations
             modelBuilder.Entity("HotelApp.EntityLayer.Concrete.MessageCategory", b =>
                 {
                     b.Navigation("Contacts");
+                });
+
+            modelBuilder.Entity("HotelApp.EntityLayer.Concrete.WorkLocation", b =>
+                {
+                    b.Navigation("AppUsers");
                 });
 #pragma warning restore 612, 618
         }

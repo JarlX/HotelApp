@@ -12,6 +12,7 @@ using DTO.RoomDTO;
 using DTO.ServiceDTO;
 using DTO.StaffDTO;
 using DTO.TestimonialDTO;
+using DTO.WorkLocationDTO;
 using EntityLayer.Concrete;
 
 public class AutoMapperConfig : Profile
@@ -45,5 +46,9 @@ public class AutoMapperConfig : Profile
         CreateMap<CreateGuestDTO, Guest>().ReverseMap();
         CreateMap<ResultGuestDTO, Guest>().ReverseMap();
         CreateMap<UpdateGuestDTO, Guest>().ReverseMap();
+
+        CreateMap<ResultWorkLocationDTO, WorkLocation>().ReverseMap();
+        CreateMap<CreateWorkLocationDTO, WorkLocation>().ReverseMap();
+        CreateMap<UpdateWorkLocationDTO, WorkLocation>().ReverseMap();
     }
 }

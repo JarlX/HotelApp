@@ -17,10 +17,12 @@ public class CreateNewUserDTO
     public string Mail { get; set; }
     
     [Required(ErrorMessage = "Şifre Alanı Gereklidir.")]
+    [MinLength(6,ErrorMessage = "Şifre En Az 6 Karakter Olmalıdır.")]
     public string Password { get; set; }
     
     [Required(ErrorMessage = "Şifre Tekrar Alanı Gereklidir.")]
     public string ConfirmPassword { get; set; }
-    
+
+    public int WorkLocationID { get; set; }
     
 }

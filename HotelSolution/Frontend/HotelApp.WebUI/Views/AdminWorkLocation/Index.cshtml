@@ -1,0 +1,36 @@
+@model List<ResultWorkLocationDTO>
+
+@{
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+<div>
+    <table class="table table-xs mb-0">
+        <thead>
+        <tr>
+            <th>Oteller</th>
+            <th>Şehir</th>
+            <th>Düzenle</th>
+            <th>Sil</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.WorkLocationName</td>
+                <td>@item.WorkLocationCity</td>
+                <td>
+                    <a class="btn mb-1 btn-rounded btn-success" href="/AdminWorkLocation/UpdateWorkLocation/@item.WorkLocationID">Güncelle</a>
+                </td>
+                <td>
+                    <a class="btn mb-1 btn-rounded btn-danger" href="/AdminWorkLocation/DeleteWorkLocation/@item.WorkLocationID">Sil</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    <a href="/AdminWorkLocation/AddWorkLocation/" class="btn mb-1 btn-rounded btn-info left">Yeni Otel Ekle</a>
+</div>
+
+
+

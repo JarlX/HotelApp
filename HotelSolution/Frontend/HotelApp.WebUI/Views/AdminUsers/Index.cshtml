@@ -8,7 +8,7 @@
 <table class="table table-xs mb-0">
     <thead>
     <tr>
-        <th>#</th>
+        <th></th>
         <th>Ad Soyad</th>
         <th>Şehir</th>
         <th>Durum</th>
@@ -22,15 +22,15 @@
     {
         x++;
         <tr>
-            <td>@x</td>
-            <td><img src="./images/avatar/1.jpg" class=" rounded-circle mr-3" alt="">@user.Name @user.SurName</td>
+            <td><img src="/adminTheme/images/avatar/1.jpg" class=" rounded-circle mr-3" alt=""></td>
+            <td>@user.Name @user.SurName</td>
             <td>@user.City</td>
             <td><i class="fa fa-circle-o @(user.EmailConfirmed ? "text-success" : "text-danger")  mr-2"></i>@(user.EmailConfirmed ? "Onaylı" : "Onaylı Değil")</td>
             <td>
                 <button class="btn btn-primary">Düzenle</button>
             </td>
             <td>
-                <button class="btn btn-primary">Sil</button>
+                <button class="btn btn-danger">Sil</button>
             </td>
         </tr>
     }
