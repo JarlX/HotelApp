@@ -52,6 +52,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     "default",
-    "{controller=Home}/{action=Index}/{id?}");
+    "{controller=Default}/{action=Index}/{id?}");
 
 app.Run();

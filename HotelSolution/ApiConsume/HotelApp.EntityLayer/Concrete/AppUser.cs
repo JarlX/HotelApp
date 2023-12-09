@@ -12,9 +12,20 @@ public class AppUser : IdentityUser<int>
 
     public string ImageUrl { get; set; }
 
+    public string Country { get; set; }
+    
+    public Gender Gender { get; set; }
+
     public string WorkDepartment { get; set; }
 
     public int WorkLocationID { get; set; }
 
     public WorkLocation WorkLocation { get; set; }
+}
+
+public enum Gender
+{
+    Erkek = 0,
+    Kadın = 1,
+    Diğer = 2
 }

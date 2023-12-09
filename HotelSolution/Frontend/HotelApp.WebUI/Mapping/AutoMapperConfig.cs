@@ -2,6 +2,7 @@ namespace HotelApp.WebUI.Mapping;
 
 using AutoMapper;
 using DTO.AboutDTO;
+using DTO.AppUserDTO;
 using DTO.BookingDTO;
 using DTO.ContactDTO;
 using DTO.GuestDTO;
@@ -50,5 +51,8 @@ public class AutoMapperConfig : Profile
         CreateMap<ResultWorkLocationDTO, WorkLocation>().ReverseMap();
         CreateMap<CreateWorkLocationDTO, WorkLocation>().ReverseMap();
         CreateMap<UpdateWorkLocationDTO, WorkLocation>().ReverseMap();
+
+        CreateMap<ResultAppUserDTO, AppUser>().ReverseMap();
+        
     }
 }

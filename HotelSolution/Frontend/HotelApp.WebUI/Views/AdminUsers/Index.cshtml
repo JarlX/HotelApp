@@ -1,4 +1,5 @@
-@model List<HotelApp.EntityLayer.Concrete.AppUser>
+@using HotelApp.EntityLayer.Concrete
+@model List<HotelApp.WebUI.DTO.AppUserDTO.ResultAppUserDTO>
 
 @{
     Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
@@ -11,6 +12,7 @@
         <th></th>
         <th>Ad Soyad</th>
         <th>Şehir</th>
+        <th>Cinsiyet</th>
         <th>Durum</th>
         <th>Güncelle</th>
         <th>Sil</th>
@@ -25,6 +27,23 @@
             <td><img src="/adminTheme/images/avatar/1.jpg" class=" rounded-circle mr-3" alt=""></td>
             <td>@user.Name @user.SurName</td>
             <td>@user.City</td>
+            <td>@{
+                    switch (user.Gender)
+                    {
+                        case Gender.Erkek:
+                            <text>Erkek</text>
+                            break;
+                        case Gender.Kadın:
+                            <text>Kadın</text>
+                            break;
+                        case Gender.Diğer:
+                            <text>Diğer</text>
+                            break;
+                        default:
+                            <text>Belirtilmemiş</text>
+                            break;
+                    }
+                }</td>
             <td><i class="fa fa-circle-o @(user.EmailConfirmed ? "text-success" : "text-danger")  mr-2"></i>@(user.EmailConfirmed ? "Onaylı" : "Onaylı Değil")</td>
             <td>
                 <button class="btn btn-primary">Düzenle</button>
