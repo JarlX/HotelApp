@@ -4,5 +4,5 @@ using EntityLayer.Concrete;
 
 public interface IRoomService : IGenericService<Room>
 {
-    
+    int TGetRoomCount();
 }

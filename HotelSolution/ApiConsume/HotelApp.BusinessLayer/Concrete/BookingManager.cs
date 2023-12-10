@@ -37,4 +37,9 @@ public class BookingManager : IBookingService
     {
         return _bookingDal.GetByID(id);
     }
+
+    public int TGetBookingCount()
+    {
+        return _bookingDal.GetBookingCount();
+    }
 }

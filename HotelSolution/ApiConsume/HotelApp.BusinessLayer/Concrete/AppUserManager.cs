@@ -42,4 +42,9 @@ public class AppUserManager : IAppUserService
     {
         return _appUserDal.UserListWithWorkLocation();
     }
+
+    public int TGetAppUserCount()
+    {
+        return _appUserDal.GetAppUserCount();
+    }
 }

@@ -11,4 +11,10 @@ public class EfRoomDal : GenericRepository<Room>,IRoomDal
     {
         
     }
+
+    public int GetRoomCount()
+    {
+        var context = new Context();
+        return context.Rooms.Count();
+    }
 }

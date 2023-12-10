@@ -16,5 +16,12 @@ public class EfAppUserDal : GenericRepository<AppUser>,IAppUserDal
     {
         var context = new Context();
         return context.Users.Include(x => x.WorkLocation).ToList();
+        
+    }
+
+    public int GetAppUserCount()
+    {
+        var context = new Context();
+        return context.Users.Count();
     }
 }

@@ -4,5 +4,5 @@ using EntityLayer.Concrete;
 
 public interface IStaffService : IGenericService<Staff>
 {
-    
+    int TGetStaffCount();
 }

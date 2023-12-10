@@ -37,4 +37,9 @@ public class RoomManager : IRoomService
     {
         return _roomDal.GetByID(id);
     }
+
+    public int TGetRoomCount()
+    {
+        return _roomDal.GetRoomCount();
+    }
 }

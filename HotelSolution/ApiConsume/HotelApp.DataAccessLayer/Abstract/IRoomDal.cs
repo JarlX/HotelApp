@@ -4,5 +4,5 @@ using EntityLayer.Concrete;
 
 public interface IRoomDal : IGenericDal<Room>
 {
-    
+    int GetRoomCount();
 }

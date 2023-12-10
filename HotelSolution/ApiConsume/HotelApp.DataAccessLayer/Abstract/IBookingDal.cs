@@ -4,5 +4,5 @@ using EntityLayer.Concrete;
 
 public interface IBookingDal : IGenericDal<Booking>
 {
-    
+    int GetBookingCount();
 }

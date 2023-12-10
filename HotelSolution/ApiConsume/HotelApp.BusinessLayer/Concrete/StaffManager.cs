@@ -37,4 +37,9 @@ public class StaffManager : IStaffService
     {
         return _staffDal.GetByID(id);
     }
+
+    public int TGetStaffCount()
+    {
+        return _staffDal.GetStaffCount();
+    }
 }

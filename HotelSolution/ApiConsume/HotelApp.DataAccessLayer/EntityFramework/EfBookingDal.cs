@@ -10,4 +10,10 @@ public class EfBookingDal : GenericRepository<Booking>,IBookingDal
     public EfBookingDal(Context context) : base(context)
     {
     }
+
+    public int GetBookingCount()
+    {
+        using var context = new Context();
+        return context.Bookings.Count();
+    }
 }
