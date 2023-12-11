@@ -42,4 +42,9 @@ public class StaffManager : IStaffService
     {
         return _staffDal.GetStaffCount();
     }
+
+    public List<Staff> TGetLast4Staff()
+    {
+        return _staffDal.GetLast4Staff();
+    }
 }

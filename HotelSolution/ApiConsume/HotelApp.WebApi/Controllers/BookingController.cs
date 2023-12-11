@@ -56,6 +56,13 @@ namespace HotelApp.WebApi.Controllers
             _bookingService.TDelete(booking);
             return Ok();
         }
+
+        [HttpGet]
+        public IActionResult GetLast6Booking()
+        {
+            var last6 = _bookingService.TGetLast6Booking();
+            return Ok(last6);
+        }
         
     }
 }

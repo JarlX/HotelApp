@@ -41,7 +41,8 @@ namespace HotelApp.WebUI.Controllers
                 SurName = createNewUserDto.Surname,
                 UserName = createNewUserDto.Username,
                 City = "",
-                WorkLocationID = 1,
+                Country = "",
+                WorkLocationID = 7,
                 ImageUrl = "",
                 WorkDepartment = ""
             };

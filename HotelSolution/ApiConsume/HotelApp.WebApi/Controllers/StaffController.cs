@@ -59,5 +59,12 @@ namespace HotelApp.WebApi.Controllers
             _staffService.TDelete(staff);
             return Ok();
         }
+        
+        [HttpGet]
+        public IActionResult GetLast4Staff()
+        {
+            var staffs = _staffService.TGetLast4Staff();
+            return Ok(staffs);
+        }
     }
 }

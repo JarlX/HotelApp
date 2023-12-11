@@ -8,6 +8,7 @@ namespace HotelApp.WebUI.Controllers
 {
     using System.Text;
     using DTO.BookingDTO;
+    using EntityLayer.Concrete;
     using Microsoft.AspNetCore.Authorization;
     using Newtonsoft.Json;
 
@@ -40,7 +41,7 @@ namespace HotelApp.WebUI.Controllers
                 DateFormatString = "yyyy-MM-dd"
             };
             createBookingDto.Description = " ";
-            createBookingDto.Status = "Onay Bekliyor";
+            createBookingDto.Status = Booking.BookingStatus.Beklemede;
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createBookingDto, jsonSettings);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");

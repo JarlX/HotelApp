@@ -1,5 +1,7 @@
 namespace HotelApp.WebUI.DTO.BookingDTO;
 
+using EntityLayer.Concrete;
+
 public class ResultBookingDTO
 {
     public string Name { get; set; }
@@ -18,5 +20,5 @@ public class ResultBookingDTO
     
     public string Description { get; set; }
     
-    public string Status { get; set; }
+    public Booking.BookingStatus Status { get; set; }
 }

@@ -42,4 +42,9 @@ public class BookingManager : IBookingService
     {
         return _bookingDal.GetBookingCount();
     }
+
+    public List<Booking> TGetLast6Booking()
+    {
+        return _bookingDal.GetLast6Booking();
+    }
 }
