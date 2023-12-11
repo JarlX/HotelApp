@@ -196,6 +196,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaXN0ZXIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/Role/AddRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9BZGRSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/Role/DeleteRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9EZWxldGVSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/Role/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/Role/UpdateRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9VcGRhdGVSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/Service/AddService.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VydmljZS9BZGRTZXJ2aWNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -226,6 +242,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/Shared/Components/_AdminDashboardLast6BookingListPartial/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0FkbWluRGFzaGJvYXJkTGFzdDZCb29raW5nTGlzdFBhcnRpYWwvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/Shared/Components/_AdminDashboardSubsCount/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0FkbWluRGFzaGJvYXJkU3Vic0NvdW50L0RlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/salihcancakar/Desktop/HotelApp/HotelSolution/Frontend/HotelApp.WebUI/Views/Shared/Components/_AdminDashboardWidgetPartial/Default.cshtml]

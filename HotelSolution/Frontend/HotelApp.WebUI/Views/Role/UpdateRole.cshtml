@@ -1,0 +1,13 @@
+@model HotelApp.WebUI.Models.Role.UpdateRoleViewModel
+
+@{
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <input type="hidden" asp-for="RoleID"/>
+    <label>Rol Adı</label>
+    <input type="text" asp-for="RoleName" class="form-control"/>
+    <br/>
+    <button type="submit" class="btn btn-primary">Rol Güncelle</button>
+</form>
