@@ -43,6 +43,21 @@ public class BookingManager : IBookingService
         return _bookingDal.GetBookingCount();
     }
 
+    public void TChangeBookingStatusApproved(int id)
+    {
+        _bookingDal.ChangeBookingStatusApproved(id);
+    }
+
+    public void TChangeBookingStatusRejected(int id)
+    {
+        _bookingDal.ChangeBookingStatusRejected(id);
+    }
+
+    public void TChangeBookingStatusPending(int id)
+    {
+        _bookingDal.ChangeBookingStatusPending(id);
+    }
+
     public List<Booking> TGetLast6Booking()
     {
         return _bookingDal.GetLast6Booking();

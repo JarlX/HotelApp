@@ -20,47 +20,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab40fe3e-8980-4642-8b0a-c22027b1d73b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/RoleController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/FollowersDTO/ResultInstagramFollowersDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/FollowersDTO/ResultLinkedinConnectionsDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/FollowersDTO/ResultTwitterFollowersDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Models/Role/AddRoleViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Models/Role/UpdateRoleViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/ViewComponents/Dashboard/_AdminDashboardSubsCount.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Role/AddRole.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Role/DeleteRole.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Role/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Role/UpdateRole.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/Shared/Components/_AdminDashboardSubsCount/Default.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/AdminRoleAssignController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/AdminSettingsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/BookingDTO/UpdateBookingDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Models/Role/RoleAssignViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Models/Settings/UserEditViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminBooking/UpdateBooking.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminRoleAssign/AssignRole.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminRoleAssign/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminSettings/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HotelSolution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HotelSolution/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.EntityLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.EntityLayer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.EntityLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.EntityLayer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/Abstract/IBookingService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/Abstract/IBookingService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/Concrete/BookingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/Concrete/BookingManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.BusinessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.BusinessLayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.BusinessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.BusinessLayer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.DataAccessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.DataAccessLayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.DataAccessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/bin/Debug/net7.0/HotelApp.DataAccessLayer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/Debug/net7.0/HotelApp.BusinessLayer.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/Debug/net7.0/HotelApp.BusinessLayer.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DTOLayer/bin/Debug/net7.0/HotelApp.EntityLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DTOLayer/bin/Debug/net7.0/HotelApp.EntityLayer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DTOLayer/bin/Debug/net7.0/HotelApp.EntityLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DTOLayer/bin/Debug/net7.0/HotelApp.EntityLayer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DTOLayer/obj/Debug/net7.0/HotelApp.DTOLayer.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DTOLayer/obj/Debug/net7.0/HotelApp.DTOLayer.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DTOLayer/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DTOLayer/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/bin/Debug/net7.0/HotelApp.EntityLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/bin/Debug/net7.0/HotelApp.EntityLayer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/bin/Debug/net7.0/HotelApp.EntityLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/bin/Debug/net7.0/HotelApp.EntityLayer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/HotelApp.DataAccessLayer.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/HotelApp.DataAccessLayer.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/Concrete/AppRole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/Concrete/AppRole.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/bin/Debug/net7.0/HotelApp.EntityLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/bin/Debug/net7.0/HotelApp.EntityLayer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/bin/Debug/net7.0/HotelApp.EntityLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/bin/Debug/net7.0/HotelApp.EntityLayer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/obj/Debug/net7.0/HotelApp.EntityLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/obj/Debug/net7.0/HotelApp.EntityLayer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/obj/Debug/net7.0/HotelApp.EntityLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/obj/Debug/net7.0/HotelApp.EntityLayer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.EntityLayer/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.EntityLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.EntityLayer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.EntityLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.EntityLayer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/Debug/net7.0/HotelApp.BusinessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/Debug/net7.0/HotelApp.BusinessLayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/Debug/net7.0/HotelApp.BusinessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/Debug/net7.0/HotelApp.BusinessLayer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/Debug/net7.0/ref/HotelApp.BusinessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/Debug/net7.0/ref/HotelApp.BusinessLayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/Debug/net7.0/refint/HotelApp.BusinessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.BusinessLayer/obj/Debug/net7.0/refint/HotelApp.BusinessLayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/Abstract/IBookingDal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/Abstract/IBookingDal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/EntityFramework/EfBookingDal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/EntityFramework/EfBookingDal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/bin/Debug/net7.0/HotelApp.DataAccessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/bin/Debug/net7.0/HotelApp.DataAccessLayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/bin/Debug/net7.0/HotelApp.DataAccessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/bin/Debug/net7.0/HotelApp.DataAccessLayer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/HotelApp.DataAccessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/HotelApp.DataAccessLayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/HotelApp.DataAccessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/HotelApp.DataAccessLayer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/ref/HotelApp.DataAccessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/ref/HotelApp.DataAccessLayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/refint/HotelApp.DataAccessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.DataAccessLayer/obj/Debug/net7.0/refint/HotelApp.DataAccessLayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/Controllers/BookingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/Controllers/BookingController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.BusinessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.BusinessLayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.BusinessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.BusinessLayer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.DataAccessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.DataAccessLayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.DataAccessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.DataAccessLayer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.WebApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/bin/Debug/net7.0/HotelApp.WebApi.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/HotelApp.WebApi.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/HotelApp.WebApi.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminAbout/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminAbout/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminDashboard/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminDashboard/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/HotelApp.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/HotelApp.WebApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/HotelApp.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/HotelApp.WebApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/ref/HotelApp.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/ref/HotelApp.WebApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/refint/HotelApp.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApiConsume/HotelApp.WebApi/obj/Debug/net7.0/refint/HotelApp.WebApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/AdminBookingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Controllers/AdminBookingController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/BookingDTO/ResultBookingDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/DTO/BookingDTO/ResultBookingDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminBooking/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminBooking/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminLayout/SidebarPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminLayout/SidebarPartial.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/_ViewImports.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.EntityLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.EntityLayer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.EntityLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.EntityLayer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.DataAccessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.DataAccessLayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.DataAccessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.DataAccessLayer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.WebUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.WebUI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.WebUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/bin/Debug/net7.0/HotelApp.WebUI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/HotelApp.WebUI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/HotelApp.WebUI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
@@ -70,8 +76,6 @@
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/HotelApp.WebUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/HotelApp.WebUI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/ref/HotelApp.WebUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/ref/HotelApp.WebUI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/refint/HotelApp.WebUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/Debug/net7.0/refint/HotelApp.WebUI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/wwwroot/adminTheme/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/wwwroot/adminTheme/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +237,7 @@
       <workItem from="1698609594366" duration="50279000" />
       <workItem from="1699306349761" duration="21220000" />
       <workItem from="1700522226144" duration="97481000" />
-      <workItem from="1702329070715" duration="7106000" />
+      <workItem from="1702329070715" duration="14682000" />
     </task>
     <servers />
   </component>
@@ -312,6 +316,20 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminUsers/Index.cshtml</url>
+          <line>8</line>
+          <properties documentPath="$PROJECT_DIR$/Frontend/HotelApp.WebUI/Views/AdminUsers/Index.cshtml" initialLine="8" isMultiMethodBreakpoint="true">
+            <option name="multiMethodBreakpoint" value="true" />
+            <startOffsets>
+              <option value="-1" />
+            </startOffsets>
+            <endOffsets>
+              <option value="-1" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

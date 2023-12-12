@@ -64,5 +64,26 @@ namespace HotelApp.WebApi.Controllers
             return Ok(last6);
         }
         
+        [HttpPut]
+        public IActionResult ChangeBookingStatusApproved(int id)
+        {
+            _bookingService.TChangeBookingStatusApproved(id);
+            return Ok();
+        }
+        
+        [HttpPut]
+        public IActionResult ChangeBookingStatusRejected(int id)
+        {
+            _bookingService.TChangeBookingStatusRejected(id);
+            return Ok();
+        }
+        
+        [HttpPut]
+        public IActionResult ChangeBookingStatusPending(int id)
+        {
+            _bookingService.TChangeBookingStatusPending(id);
+            return Ok();
+        }
+        
     }
 }

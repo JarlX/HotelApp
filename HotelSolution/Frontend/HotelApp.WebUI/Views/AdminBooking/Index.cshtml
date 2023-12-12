@@ -1,3 +1,4 @@
+@using HotelApp.EntityLayer.Concrete
 @model List<ResultBookingDTO>
 
 @{
@@ -30,10 +31,38 @@
                     </td>
                     <td>@item.ChildCount</td>
                     <td>@item.CheckIn.Date.ToString("dd.MM.yyyy") - @item.CheckOut.Date.ToString("dd.MM.yyyy")</td>
-                    <td class="color-primary">@item.Status</td>
-                    <td><button class="btn mb-1 btn-rounded btn-outline-info">Detaylar</button></td>
-                    <td><button class="btn mb-1 btn-rounded btn-outline-success">Onayla</button></td>
-                    <td><button class="btn mb-1 btn-rounded btn-outline-danger">Red Et</button></td>
+                    <td>
+                        @switch (item.Status)
+                        {
+                            case Booking.BookingStatus.Onaylandı:
+                                <td><i class="fa fa-circle-o text-success  mr-2"></i>Onaylandı</td>                                                <span>Onaylandı</span>
+                                break;
+                            case Booking.BookingStatus.Beklemede:
+                                @:<!-- Beklemede durumu için farklı bir görünüm -->
+                                <td><i class="fa fa-circle-o text-warning  mr-2"></i>Beklemede</td> 
+                                break;
+                            case Booking.BookingStatus.Reddedildi:
+                                @:<!-- Reddedildi durumu için farklı bir görünüm -->
+                                <td><i class="fa fa-circle-o text-danger  mr-2"></i>Red Edildi</td> 
+                                break;
+                            case Booking.BookingStatus.MüşteriAranacak:
+                                @:<!-- Müşteri Aranacak durumu için farklı bir görünüm -->
+                                <td><i class="fa fa-circle-o text-primary  mr-2"></i>Müşteri Aranacak</td> 
+                                break;
+                            case Booking.BookingStatus.MüşteriyeUlaşılamadı:
+                                @:<!-- Müşteriye Ulaşılamadı durumu için farklı bir görünüm -->
+                                <td><i class="fa fa-circle-o text-secondary  mr-2"></i>Müşteriye Ulaşılamadı</td> 
+                                break;
+                            default:
+                                @:<!-- Bilinmeyen durum için farklı bir görünüm -->
+                                <td><i class="fa fa-circle-o text-info mr-2"></i>Bilinmeyen Durum</td> 
+                                break;
+                        }
+                    </td>
+                    <td><a href="/AdminBooking/UpdateBooking/@item.BookingID" class="btn mb-1 btn-rounded btn-outline-info">Güncelle</a></td>
+                    <td><a href="/AdminBooking/ApproveBooking/@item.BookingID" class="btn mb-1 btn-rounded btn-outline-success">Onayla</a></td>
+                    <td><a href="/AdminBooking/PendingBooking/@item.BookingID" class="btn mb-1 btn-rounded btn-outline-warning">Beklet</a></td>
+                    <td><a href="/AdminBooking/RejectBooking/@item.BookingID" class="btn mb-1 btn-rounded btn-outline-danger">Red Et</a></td>
                 </tr>
             }
             </tbody>
